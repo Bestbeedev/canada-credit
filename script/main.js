@@ -30,19 +30,23 @@ const animations = [
 ];
 
 animations.forEach(({ element, x = 0, y = 0 }) => {
-    gsap.from(element, {
-        x,
-        y,
-        opacity: 0,
-        duration: 1,
-        ease: "power4.out",
-        scrollTrigger: {
-            trigger: element,
-            start: "top 90%",
-            end: "+=500",
-            scrub: true
-        }
-    });
+    if (document.querySelector(element)) { // Vérifie si l'élément existe avant d'appliquer l'animation
+        gsap.from(element, {
+            x,
+            y,
+            opacity: 0,
+            duration: 1,
+            ease: "power4.out",
+            scrollTrigger: {
+                trigger: element,
+                start: "top 90%",
+                end: "+=500",
+                scrub: true
+            }
+        });
+    } else {
+        console.warn(`GSAP target ${element} not found.`); // Avertit si l'élément n'est pas trouvé
+    }
 });
 
 // Ajoute un écouteur d'événement pour le chargement du DOM
@@ -79,12 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setActiveLink(); // Appliquer l'effet au chargement de la page
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".bg-slider");
   let index = 0;
 
   function changeBackground() {
+    if (slides.length === 0) return; // Vérifie si des diapositives existent
+
     const current = slides[index];
     const nextIndex = (index + 1) % slides.length;
     const next = slides[nextIndex];
@@ -93,10 +98,14 @@ document.addEventListener("DOMContentLoaded", function () {
     slides.forEach((slide) => slide.classList.remove("active", "previous"));
 
     // 🔹 Mettre l'image actuelle en "previous" (elle sort vers la gauche)
-    current.classList.add("previous");
+    if (current) {
+      current.classList.add("previous");
+    }
 
     // 🔹 Mettre la prochaine image en "active" (elle entre depuis la droite)
-    next.classList.add("active");
+    if (next) {
+      next.classList.add("active");
+    }
 
     // 🔹 Mettre à jour l'index pour la prochaine transition
     index = nextIndex;
@@ -105,10 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // ⏳ Démarrer le slider toutes les 6 secondes
   setInterval(changeBackground, 6000);
 });
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const selects = document.querySelectorAll("#language-select, #language-select-1");
@@ -183,6 +188,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Exécuter immédiatement
   removeGoogleTranslateUI();
 });
-
-
-
