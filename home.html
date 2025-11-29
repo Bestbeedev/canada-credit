@@ -1252,13 +1252,8 @@ if (window.innerWidth >= 768) {
                 </a>
 
                 <!-- BBB Logo -->
-                <a href="https://www.bbb.org/ca/on/north-york/profile/credit-and-debt-counseling/consolidated-credit-counseling-services-of-canada-inc-0107-1176071"
-                   target="_blank"
-                   class="partner-logo w-20 md:w-24"
-                   id="bbb-logo">
-                    <img src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/bbb-logo.svg"
-                         alt="BBB Logo"
-                         class="w-full h-auto">
+                <a id="bbb-logo" href="#" target="_blank" aria-label="Open popup window about BBB" class="activate-modal w-20 flex-shrink-0 transition-all transform hover:scale-125 m-4 md:mx-7 lg:mx-12 xl:mx-7">
+                    <img id="bbb" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/bbb-logo.svg" alt="BBB Logo" width="100%" height="100%">
                 </a>
 
                 <!-- CACCS Logo -->
@@ -1298,6 +1293,127 @@ if (window.innerWidth >= 768) {
             </div>
         </div>
     </section>
+
+    <!-- Modals -->
+
+    <!-- CPBC Modal -->
+    <div id="cpbc-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg  max-w-lg  max-sm:w-[96vw]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">CPBC - Consumer Protection BC</h2>
+                <button class="close-modal text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50 ">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/cpbc-logo.svg" alt="CPBC Logo">
+            <p class="mt-4 text-sm text-gray-600">Consumer Protection BC est l'organisation responsable de la supervision des services de règlement de dettes en Colombie-Britannique.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BBB Modal -->
+    <div id="bbb-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg max-w-lg  max-sm:w-[96vw]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">BBB - Better Business Bureau</h2>
+                <button class="close-modal text-lg text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/bbb-logo.svg" alt="BBB Logo">
+            <p class="mt-4 text-sm text-gray-600">BBB is an organization that evaluates businesses based on trustworthiness and performance.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CACCS Modal -->
+    <div id="caccs-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg  max-w-lg  max-sm:w-[96vw]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">CACCS - Canadian Association of Credit Counselling Services</h2>
+                <button class="close-modal text-lg text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/caccs-logo.svg" alt="CACCS Logo">
+            <p class="mt-4 text-sm text-gray-600">Nous sommes fiers d’être membres de l’Association canadienne des services-conseils en crédit (AACCC), la voix nationale des services de conseils en crédit sans but lucratif. En tant que membre de la CACCS, vous pouvez avoir confiance que nos conseillers en crédit qualifiés s’efforcent de fournir le meilleur des services financiers personnels, indépendants et impartiaux. Nous avons aidé des centaines de milliers de Canadiens à se libérer de leurs dettes. Appelez-nous aujourd’hui pour savoir si nous pouvons vous aider.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toronto Board of Trade Modal -->
+    <div id="toronto-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg  max-w-lg  max-sm:w-[96vw]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">Toronto Board of Trade</h2>
+                <button class="close-modal text-lg text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/toronto-logo.svg" alt="Toronto Board of Trade Logo">
+            <p class="mt-4 text-sm text-gray-600">Canada-credit est fière d’être membre de la Chambre de commerce de Toronto, et de la soutenir. Fondée en 1845, la Chambre de commerce de Toronto est la plus grande chambre de commerce locale du Canada. Nous partageons leur vision, leur passion et leur engagement à servir la collectivité et à favoriser le bien-être économique et social de la ville de Toronto. Téléphonez-nous dès aujourd’hui et voyez ce que nous pouvons faire pour vous.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600  ">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CCA Modal -->
+    <div id="cca-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg  max-w-lg  max-sm:w-[96vw]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">CCA - Canadian Centre for Accreditation</h2>
+                <button class="close-modal text-lg text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/cca-logo.svg" alt="CCA Logo">
+            <p class="mt-4 text-sm text-gray-600">Canada-credit est accrédité par le Centre canadien d’accréditation - un organisme national chargé d’assurer l’excellence dans le service communautaire. Nous répondons aux normes élevées de service et de responsabilité de CCA. Appelez-nous aujourd’hui et découvrez ce que nous pouvons faire pour vous.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- OACCS Modal -->
+    <div id="oaccs-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg max-w-lg  max-sm:w-[96vw] ">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">OACCS - Ontario Association of Credit Counselling Services</h2>
+                <button class="close-modal text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50 ">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/oaccs-logo.svg" alt="OACCS Logo">
+            <p class="mt-4 text-sm text-gray-600">Nous sommes fiers de faire partie de l’Association ontarienne des conseillers en crédit (OACCS). L’OACCS établit le niveau d’expertise requis pour l’industrie du conseil financier et la seule organisation à offrir la désignation professionnelle exclusive de Conseiller financier agréé Canada (AFCC). Avec plus de 500 000 personnes aidées, vous pouvez être assuré que nous pouvons trouver la bonne solution pour vous. Appelez-nous aujourd’hui.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Passer la demande</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Social Modal -->
+    <div id="buy-social-logo-modal" class="modal hidden fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div class="bg-white p-6 rounded-lg max-w-lg  max-sm:w-[96vw] ">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">Buy Social</h2>
+                <button class="close-modal text-neutral-800 bg-neutral-100 hover:bg-red-600 px-4 py-2 rounded-lg hover:text-neutral-50 ">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <img class="w-32 h-32 mx-auto" src="https://fr.consolidatedcreditcanada.ca/wp-content/themes/cccs-canada/public/svg/buy-social-logo.svg" alt="Buy Social Logo">
+            <p class="mt-4 text-sm text-gray-600">Nous sommes fiers d’être une entreprise sociale certifiée Buy Social Canada. En tant qu’entreprise sociale certifiée Buy Social Canada, nous avons une mission sociale, environnementale ou culturelle centrale, nous générons la majorité de nos revenus de la vente de biens ou de services, et nous réinvestissons la majorité de nos profits dans notre mission ou notre objectif. Nous nous concentrons sur la vente avec impact et faisons partie du mouvement croissant des créateurs de capital communautaire.</p>
+            <div class="mt-4 flex justify-start">
+                <a href="/contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Passer la demande</a>
+            </div>
+        </div>
+    </div>
 
     <!-- CTA Section -->
     <section class="section-padding gradient-bg text-white relative overflow-hidden">
@@ -1406,7 +1522,7 @@ if (window.innerWidth >= 768) {
             <div class="border-t border-gray-800 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="text-gray-400 text-sm mb-4 md:mb-0">
-                        © 2024 Canada-Credit. Tous droits réservés.
+                        2024 Canada-Credit. Tous droits réservés.
                     </div>
                     <div class="flex flex-wrap gap-4 text-sm">
                         <a href="./privacy-policy" class="text-gray-400 font-semibold transition-colors text-sm">Politique de confidentialité</a>
@@ -1434,8 +1550,83 @@ if (window.innerWidth >= 768) {
     </div>
 
     <script>
+        function initPartnerModals() {
+            let activeModal = null;
+            let lastFocused = null;
+            const focusableSelector = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
 
-        // Stats Counter Animation
+            function openModal(modal) {
+                if (!modal) return;
+                lastFocused = document.activeElement;
+                activeModal = modal;
+                modal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+                const focusables = modal.querySelectorAll(focusableSelector);
+                (focusables[0] || modal).focus();
+                console.log(modal);
+            }
+
+            function closeModal(modal) {
+                if (!modal) return;
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                activeModal = null;
+                if (lastFocused) lastFocused.focus();
+            }
+
+            // Event delegation for open/close
+            document.addEventListener('click', (e) => {
+                const trigger = e.target.closest('.activate-modal');
+                if (trigger) {
+                    e.preventDefault();
+                    const modalId = trigger.dataset.modal || `${trigger.id}-modal`;
+                    openModal(document.getElementById(modalId));
+                    return;
+                }
+
+                const closeBtn = e.target.closest('.close-modal');
+                if (closeBtn) {
+                    closeModal(closeBtn.closest('.modal'));
+                    return;
+                }
+
+                const overlay = e.target.classList.contains('modal') ? e.target : null;
+                if (overlay) {
+                    closeModal(overlay);
+                }
+            });
+
+            // Global Escape + focus trap
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && activeModal && !activeModal.classList.contains('hidden')) {
+                    closeModal(activeModal);
+                    return;
+                }
+                if (e.key === 'Tab' && activeModal && !activeModal.classList.contains('hidden')) {
+                    const focusables = activeModal.querySelectorAll(focusableSelector);
+                    if (focusables.length === 0) return;
+                    const first = focusables[0];
+                    const last = focusables[focusables.length - 1];
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPartnerModals, { once: true });
+        } else {
+            initPartnerModals();
+        }
+    </script>
+
+    <!-- Stats Counter Animation -->
+    <script>
         const counters = document.querySelectorAll('.stats-counter');
         const speed = 200;
 
