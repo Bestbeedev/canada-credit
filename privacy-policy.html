@@ -9,346 +9,636 @@
     <title>Politique de Confidentialité | Canada-Credit</title>
     <link rel="canonical" href="https://canada-credit.fr/privacy-policy" />
 
-
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KQSCGS83');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+        'gtm.start': new Date().getTime(),event:'gtm.js'
+        });var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
 
     <!-- Meta for Socials Medias -->
     <meta property="og:title" content="Politique de Confidentialité | Canada-Credit" />
-   <meta property="og:description" content="Découvrez comment Canada-Credit protège vos données personnelles et respecte votre vie privée en toute transparence." />
-   <meta property="og:url" content="https://www.canada-credit.com/politique-confidentialite" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.canada-credit.com/images/confidentialite.jpg" />
+    <meta property="og:description" content="Découvrez comment Canada-Credit protège vos données personnelles et respecte votre vie privée en toute transparence." />
+    <meta property="og:url" content="https://www.canada-credit.com/politique-confidentialite" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.canada-credit.com/images/confidentialite.jpg" />
 
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,300,400,500,700,900" rel="stylesheet" />
-    <script src="/script/main.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <!-- Script Google Translate -->
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr', autoDisplay: false },
-                'google_translate_element'
-            );
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #06d6a0;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-    </script>
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sora', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .legal-content {
+            max-width: 6xl;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+        }
+
+        .legal-section h3 {
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .legal-list {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .legal-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .privacy-highlight {
+            background: linear-gradient(120deg, #dbeafe 0%, #e0e7ff 100%);
+            border-left: 4px solid #3b82f6;
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="bg-white">
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Header -->
-    <header class="sticky bg-neutral-50 shadow-lg inset-x-0 top-0 z-50">
-        <nav class="flex items-center items-center justify-between py-3 px-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="./home" class="-m-1.5 p-1.5">
-                    <span class="sr-only">canada-credit</span>
-                    <h1 class="text-2xl text-indigo-600 max-sm:text-lg  font-semibold">canada-credit</h1>
-                </a>
-            </div>
-            <div class="flex space-x-3 lg:hidden">
-                <div class="mx-4">
-                    <select id="language-select-1"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
                 </div>
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center cursor-pointer  text-neutral-600 justify-center rounded-md p-2.5 text-gray-700"
-                    id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars text-neutral-600"></i>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
+                    <a href="./investment" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
+                    <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
+                    <a href="./contact" class="btn-primary text-sm xl:text-base">Faire une Demande</a>
+
+                    <!-- Language Selector -->
+                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="nl">🇳🇱 NL</option>
+                    </select>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-700 text-lg"></i>
                 </button>
             </div>
-            <div class="hidden lg:flex items-center  lg:gap-x-12">
-                <a href="./home" class="text-sm/6 font-semibold  nav-link text-gray-900">Accueil</a>
-                <a href="./loan-hypo" class="text-sm/6 nav-link font-semibold text-gray-900">Prêts
-                    hypothécaires-personnels</a>
-                <a href="./investment" class="text-sm/6 nav-link font-semibold text-gray-900">Investissements</a>
-                <a href="./about" class="text-sm/6  nav-link font-semibold text-gray-900">À propos</a>
-                <a href="./contact" class="text-sm/6 nav-link font-semibold text-gray-900">Faire une demande</a>
-                <div class="mx-4">
-                    <select id="language-select"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
-                </div>
-            </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden  hidden" role="dialog" aria-modal="true" id="mobile-menu">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="./home" class="-m-1.5 p-1.5">
-                        <span class="sr-only">canada-credit</span>
-                        <h1 class="text-xl text-indigo-600 font-semibold">canada-credit</h1>
+        </div>
 
-                    </a>
-                    <button type="button"
-                        class="-m-2.5 bg-neutral-200 cursor-pointer  border-neutral-400  rounded-md p-2 px-4 text-gray-700 text-neutral-600"
-                        id="close-mobile-menu">
-                        <span class="sr-only">Close menu</span>
-                        <i class="fas fa-times text-neutral-600"></i>
-                    </button>
-                </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6"></div>
-                        <a href="./home"
-                            class="-mx-3 block  nav-link-mobile  rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-                        <a href="./about"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">À
-                            propos</a>
-                        <a href="/loan-hypo"
-                            class="-mx-3 block  nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prêts
-                            hypothécaires/personnels</a>
-                        <a href="./investment"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Investissements</a>
-                        <a href="/contact"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Faire
-                            une demande</a>
-                    </div>
-                </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-6 space-y-4">
+                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
+                <a href="./investment" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Investissements</a>
+                <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
+                <a href="./contact" class="block py-4 text-center btn-primary w-full">Faire une Demande</a>
+
+                <!-- Mobile Language Selector -->
+                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
             </div>
         </div>
     </header>
 
-    <main class="flex flex-col items-center justify-center max-sm:px-6 min-h-screen bg-white p-6">
-        <div class=" bg-neutral-50 p-10 rounded-xl shadow-md">
-            <h2 class="text-3xl font-semibold tracking-tight text-gray-900">Déclaration de confidentialité</h2>
-            <p class="mt-4 text-lg text-gray-700">Cette politique a été mise à jour le 16 août 2023.</p>
-            <p class="mt-4 text-lg text-gray-700">Il s’agit de la politique (cette « Politique ») de confidentialité de Canada-Credit Counseling du Canada Inc. (« Canada-Credit »). Cette Politique explique les politiques de collecte, d’utilisation et de divulgation de renseignements personnels de Canada-Credit. Canada-Credit respecte les lois applicables en matière de protection de la vie privée, notamment la Loi sur la production de renseignements personnels et les documents électroniques, avec ses modifications successives.</p>
-            <p class="mt-4 text-lg text-gray-700">Aux fins des présentes, on entend par « renseignements personnels » les renseignements sur une personne identifiable.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Les renseignements que nous recueillons</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit offre des services de consultation en matière de crédits.</p>
-            <p class="mt-4 text-lg text-gray-700">Les types de renseignements personnels que nous pouvons recueillir comprennent le nom et les coordonnées, la date de naissance, la langue de préférence, les renseignements sur la solvabilité, les renseignements sur la dette, le revenu et les renseignements financiers, ainsi que les noms d’utilisateur des médias sociaux. En outre, nous pouvons collecter certains renseignements comme les témoins, adresses IP, balises Web, ou d’autres renseignements qui ne peuvent être utilisés pour identifier directement une personne, mais qui peuvent tout de même être utilisés pour l’identifier lorsqu’ils sont associés à d’autres renseignements qui peuvent être disponibles dans les dossiers publics. Il est possible que nous enregistrions les appels à des fins de précision, d’analyse du rendement et de formation.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Comment nous recueillons les renseignements ?</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit recueille des renseignements de différentes façons, y compris les renseignements donnés directement par ses clients et (avec consentement) les vérifications de la solvabilité et les renseignements découlant de nos consultations en matière de crédits.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Comment utilisons-nous ces renseignements ?</h3>
-            <p class="mt-4 text-lg text-gray-700">Ces renseignements personnels sont uniquement utilisés à des fins de service au client. Les coordonnées du client peuvent également être utilisées à d’autres fins internes, comme pour l’envoi des bulletins électroniques, des mises à jour, des annonces de Canada-Credit ou d’autres renseignements ou pour mieux servir nos clients.</p>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit peut utiliser des renseignements groupés ou anonymes qui ne seront pas liés à des individus identifiés pour divers autres usages pour ses services et des tiers.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Avec qui partageons-nous ces renseignements ?</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit ne partage pas les renseignements personnels avec des tiers, sauf si nécessaire pour fournir ou améliorer nos services. La nature de nos services exige que Canada-Credit divulgue des renseignements personnels aux créanciers. Canada-Credit peut fournir des renseignements personnels à ses consultants, sous-traitants et conseillers professionnels ou autres tiers (chacun d’eux étant lié par des obligations de confidentialité) afin de soutenir les usages de Canada-Credit divulgués ici. Si Canada-Credit réfère un client à un tiers pour des conseils ou des services que Canada-Credit ne fournit pas, il partagera les renseignements personnels de ce client avec le tiers une fois que le client se soit engagé à utiliser ces services.</p>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit divulguera des renseignements personnels à l’insu ou sans le consentement d’une personne si nous recevons une ordonnance, une assignation, un mandat ou toute autre exigence légale émise par une cour, un tribunal, un organisme de réglementation ou toute autre personne ayant le pouvoir d’exiger la divulgation des renseignements personnels d’une personne. Si nous recevons une demande d’accès à vos renseignements personnels d’un agent de police ou d’un autre organisme de l’application de la loi dans le cadre d’une enquête réelle ou potentielle, notre politique est d’exiger que l’agent de police ou l’organisme d’application de la loi obtienne une ordonnance, une assignation ou un mandat, à moins que les renseignements ne soient requis de toute urgence pour empêcher des lésions corporelles graves ou des dommages sérieux à des biens personnels. Si nous recevons une demande écrite d’un agent de police ou d’un autre organisme d’application de la loi autorisé à demander l’accès à vos renseignements personnels dans le cadre d’une enquête réelle ou potentielle sur une infraction à la loi, notre politique est de fournir les renseignements demandés.</p>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit peut divulguer des renseignements personnels à une autre entité achetant les actifs de Canada-Credit (incluant les principes d’application antérieurs à l’acquisition) à condition que cette entité respecte cette politique de confidentialité ou une politique similaire.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Acceptation et refus des textos et des appels téléphoniques</h3>
-            <p class="mt-4 text-lg text-gray-700">En fournissant votre numéro de téléphone et/ou en rejoignant notre service de textos, vous autorisez à vous contacter (y compris à l’aide de composeurs automatiques, de textos automatisés et de messages préenregistrés) par l’intermédiaire de votre téléphone, de votre téléphone portable, de votre appareil mobile (y compris les textos et les MMS) et de votre courriel, même si votre numéro de téléphone est actuellement enregistré sur une liste de numéros de téléphone exclus d’un État, d’un gouvernement fédéral ou d’une entreprise. Les tarifs standard de téléphonie et de services de données s’appliquent. Votre consentement aux conditions ci-dessus n’est pas une condition pour acheter ou recevoir nos services. Vous autorisez également l’enregistrement et la surveillance de tous les appels qui nous sont destinés ou que nous recevons. Vous pouvez à tout moment refuser de recevoir de tels appels téléphoniques ou textos sur votre téléphone portable en nous envoyant vos directives par courriel à <a href="mailto:info@canada-credit.fr">info@canada-credit.fr</a>. Vous pouvez également vous désabonner et retirer votre autorisation de recevoir des textos en répondant « STOP », « END », « QUIT », « UNSUBSCRIBE » ou « CANCEL » (« ARRÊT », « CESSER », « TERMINER », « DÉSABONNER » ou « ANNULER ») pour tout texto que vous recevez ou en vous rendant sur le site Membres de Canada-Credit.</p>
-            <p class="mt-4 text-lg text-gray-700">Aucune donnée mobile ne sera communiquée à des tiers/affiliés à des fins de marketing/promotion. Toutes les catégories ci-dessus excluent les données et le consentement de l’expéditeur des textos ; ces renseignements ne seront pas partagés avec des tiers.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Sécurité</h3>
-            <p class="mt-4 text-lg text-gray-700">Les renseignements personnels des clients sont classés dans une combinaison de dossiers imprimés et électroniques. Ces dossiers sont protégés par des mesures de sécurité appropriées à la nature des renseignements. Les données des clients sur le réseau de Canada-Credit sont chiffrées de passage et toutes les données sont chiffrées inactives. Les sauvegardes sont effectuées au moins une fois par jour et toutes les sauvegardes sont chiffrées, protégées par un système d’isolement et à vérification systématique.</p>
-            <p class="mt-4 text-lg text-gray-700">Vous serez rapidement averti par écrit en cas de vol, perte, utilisation non autorisée ou publication de vos renseignements personnels confidentiels.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Accès aux renseignements</h3>
-            <p class="mt-4 text-lg text-gray-700">Les individus peuvent examiner leurs renseignements personnels contenus dans les dossiers de Canada-Credit en communiquant avec l’agent de la protection de la vie privée de Canada-Credit à l’adresse courriel indiquée à la fin de cette politique. Si ces renseignements personnels sont inexacts, nous apporterons les corrections nécessaires.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Politique de désabonnement, votre infolettre et vos abonnements par courriel</h3>
-            <p class="mt-4 text-lg text-gray-700">Vous pouvez vous désabonner de l’infolettre ou de toute autre liste de courriels à tout moment en suivant les instructions à la fin des infolettres ou des courriels que vous recevez. Veuillez prévoir de cinq à dix jours ouvrables pour que les changements prennent effet. Les communications liées au service à la clientèle sont un élément intégral des services que nous vous offrons et vous continuerez à recevoir de tels courriels à moins que vous annuliez votre compte, même si vous vous désabonnez des infolettres ou de la liste de courriels. Si vous nous avez fourni plusieurs adresses électroniques, il est possible que vous continuiez à être contacté à moins que vous demandiez de vous désabonner de chaque adresse électronique que vous avez fournie. Vous pouvez également choisir de ne plus recevoir notre infolettre ou nos courriels promotionnels en nous contactant à l’adresse électronique de désabonnement ou en répondant à un courriel précédent avec votre demande de retrait de la liste d’envois ou en cliquant ici.</p>
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">Témoins</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Ce site Web, <a href="https://www.canada-credit.fr/">https://www.canada-credit.fr/</a> (le « Site Web »), utilise des témoins pour améliorer les performances du site Web et votre expérience en tant qu’utilisateur. Certaines parties du site Web utilisent également des témoins pour mieux comprendre nos utilisateurs afin de leur offrir des expériences plus personnalisées.</p>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Si vous avez des questions concernant les témoins que nous utilisons, veuillez nous contacter à l’adresse suivante : <a href="mailto:info@canada-credit.fr">info@canada-credit.fr</a> ou 437-266-2790.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(a) Qu’est-ce qu’un témoin ?</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Un témoin est un petit fichier texte placé sur votre appareil par les sites Web que vous visitez. Les témoins sont ensuite renvoyés au site Web lors de chaque visite ultérieure, ou à une autre page Web qui le reconnaît. Les témoins sont utilisés pour faire fonctionner le site Web, ou pour le faire fonctionner plus efficacement, ainsi que pour fournir des renseignements aux propriétaires du site Web. Ces renseignements peuvent être utilisés pour fournir un service plus personnalisé et plus réactif. Les témoins peuvent être soit de première partie installés directement par nous sur votre appareil, soit de tierce partie installés par un fournisseur tiers en notre nom. Chaque fois que vous utilisez ce site Web, des renseignements peuvent être collectés par le biais de témoins et d’autres technologies similaires (par exemple, balises Web, scripts, stockage local).</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(b) Témoins que nous pouvons utiliser et pourquoi</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Lorsque nous utilisons des témoins sur notre site Web, nous pouvons les classer dans l’une des catégories suivantes :</p>-->
-            <!--<ul class="mt-4 text-lg text-gray-700 list-disc list-inside">-->
-            <!--    <li>Les témoins « strictement nécessaires» sont indispensables au fonctionnement du site Web et ne peuvent pas être désactivés dans nos systèmes. Ils ne sont généralement définis qu’en réponse à des actions que vous effectuez et qui équivalent à une demande de services, comme le réglage de vos préférences concernant protection de la vie privée, la connexion ou le remplissage de formulaires.</li>-->
-            <!--    <li>Les témoins « analyse et performance » nous permettent d’effectuer un suivi analytique en comptant les visites et les sources de trafic afin que nous puissions mesurer et améliorer la performance de notre site Web. Ils peuvent être définis par nous ou par des fournisseurs tiers Google Analytics, Matamo & Anura pour nous aider à savoir quelles pages ou vidéos sont les plus et les moins populaires et voir comment les visiteurs se déplacent sur le site Web.</li>-->
-            <!--    <li>Les témoins « fonctionnels » permettent au site Web de fournir des fonctionnalités améliorées et une personnalisation basée sur votre interaction avec le site Web. Ils peuvent être définis par nous-mêmes ou par des fournisseurs tiers, tels qu’Adobe, dont nous avons ajouté les services à nos pages.</li>-->
-            <!--    <li>Des témoins de « publicité et de ciblage» peuvent être installés sur notre site Web par nos partenaires publicitaires. Elles peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d’autres sites Web.</li>-->
-            <!--    <li>Les témoins de « médias sociaux» sont définis par les services de médias sociaux (par exemple, Twitter, LinkedIn, Facebook, YouTube, Pinterest, Instagram) que nous avons ajoutés au site Web pour vous permettre de partager notre contenu avec vos amis et vos réseaux. Ces témoins sont capables de suivre votre navigateur sur d’autres sites Web et d’établir un profil de vos intérêts. Cela peut avoir une incidence sur le contenu et les messages que vous voyez sur d’autres sites Web que vous visitez.</li>-->
-            <!--</ul>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Pour consulter la liste des témoins utilisés par le site Web, cliquez sur « Gérer les préférences concernant les témoins » en haut du présent avis.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(c) Combien de temps les témoins resteront-ils sur mon appareil ?</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">La durée de conservation des témoins sur votre appareil varie selon qu’il s’agit d’un témoin « persistant » ou de « session ». Un témoin persistant sera stocké par un navigateur Web et restera valide jusqu’à sa date d’expiration, à moins que vous ne le supprimiez avant la date d’expiration. Un témoin de session, en revanche, expire à la fin de votre session Web, lorsque le navigateur Web est fermé.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(d) Témoins qui ont été activés dans le passé</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Si vous avez désactivé un ou plusieurs témoins, nous pouvons encore utiliser les renseignements collectés par les témoins avant que votre préférence ne soit désactivée; cependant, nous cesserons d’utiliser le témoin désactivé pour collecter d’autres renseignements.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(e) Comment puis-je contrôler les témoins ?</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Vous pouvez les contrôler et les gérer de différentes manières. N’oubliez pas que la suppression ou la désactivation des témoins peut avoir une incidence sur votre expérience d’utilisateur et que certaines parties de ce site Web peuvent ne plus être pleinement fonctionnelles.</p>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Cliquez sur « Gérer les préférences en matière de témoins » en haut de cette page pour contrôler les témoins utilisés sur ce site Web. Vous pouvez également modifier les paramètres de votre navigateur pour gérer et contrôler les témoins.</p>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Pour plus de renseignements sur les témoins utilisés par d’autres sites ou pages Web, veuillez vous référer à l’avis spécifique sur la confidentialité ou les témoins de ces sites Web.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(f) Communications par courrier électronique</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Nous pouvons également utiliser des technologies de suivi pour déterminer si vous avez lu, cliqué ou transféré certaines communications électroniques que nous vous envoyons, afin de rendre nos communications plus utiles et plus intéressantes. Si vous ne souhaitez pas que nous confirmions si vous avez ouvert, cliqué ou transféré nos communications, vous devrez vous désabonner, car il nous est impossible d’envoyer ces courriels sans que le suivi soit activé. Les abonnés enregistrés peuvent mettre à jour leurs préférences de communication à tout moment en nous contactant, ou vous pouvez vous désabonner en suivant les instructions figurant dans les communications électroniques individuelles que vous recevez de notre part.</p>-->
-            <!--<h3 class="mt-6 text-2xl font-semibold text-gray-900">(g) Modifications du présent avis sur les témoins</h3>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Nous pouvons modifier ou amender cet avis sur les témoins de temps à autre, à notre discrétion. Lorsque nous apportons des modifications à cet avis, nous modifions la date de révision en haut de cette page, et cet avis modifié ou amendé concernant les témoins prend effet pour vous et vos renseignements à partir de cette date de révision.</p>-->
-            <!--<p class="mt-4 text-lg text-gray-700">Nous vous encourageons à consulter régulièrement la présente notice sur les témoins pour vous tenir informé de la manière dont nous les utilisons.</p>-->
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Pixels invisibles de tierces parties</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit utilise des balises Web tierces de Yahoo ! pour aider à analyser où vont les visiteurs et ce qu’ils font lorsqu’ils visitent le site Web. Yahoo! peut également utiliser des renseignements anonymes à propos de vos visites sur ce site Web et d’autres sites afin d’améliorer ses produits et services et de fournir des publicités sur les biens et les services qui vous intéressent. Si vous désirez plus de renseignements sur cette pratique et pour connaître vos choix concernant l’interdiction d’utiliser ces renseignements par Yahoo! visitez <a href="https://legal.yahoo.com/us/en/yahoo/privacy/dashboard/index.html">ce lien</a> pour apprendre comment vous désabonner de ce service.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Conservation des renseignements personnels</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit conservera vos renseignements personnels aussi longtemps que nécessaire aux fins déterminées, conformément à la loi, ou conformément à nos calendriers de conservation, qui peuvent s’étendre au-delà de la cessation de notre relation avec vous. Canada-Credit se réserve le droit de conserver les dossiers de renseignements personnels des clients actifs et inactifs ou non inscrits.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Enfants et mineurs</h3>
-            <p class="mt-4 text-lg text-gray-700">Le site Web et les services qui y sont proposés ne sont pas destinés aux enfants de moins de 13 ans. Nous ne recueillerons pas sciemment de renseignements personnels sur un enfant de moins de 13 ans. Nous n’autorisons pas les mineurs (personnes n’ayant pas atteint l’âge de la majorité dans leur lieu de résidence) à créer des comptes, à effectuer des achats, à participer à des concours ou à des promotions, ou à utiliser le site Web de quelque manière que ce soit. Si vous croyez que votre enfant a entré des renseignements sur notre site, veuillez aviser Canada-Credit afin que nous puissions supprimer ces renseignements de notre base de données.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Entreposage à l’extérieur du Canada</h3>
-            <p class="mt-4 text-lg text-gray-700">Vos renseignements personnels peuvent être utilisés ou stockés par nous ou nos fournisseurs de services et nos sociétés affiliées à l’extérieur du Canada. Nous exigeons que nos fournisseurs de services et nos sociétés affiliées protègent vos renseignements personnels. Toutefois, si vos renseignements personnels sont utilisés ou stockés à l’extérieur du Canada, ils seront également assujettis aux lois du pays où ils sont utilisés ou stockés.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Généralités</h3>
-            <p class="mt-4 text-lg text-gray-700">Canada-Credit se réserve le droit de modifier cette politique à tout moment en publiant une version mise à jour sur notre site Web. Si ces modifications affectent la façon dont Canada-Credit utilise ou divulgue des renseignements personnels déjà détenus par Canada-Credit de manière matérielle, Canada-Credit demandera le consentement.</p>
-            <p class="mt-4 text-lg text-gray-700">Nonobstant les conditions générales de la présente politique, la collecte, l’utilisation et la divulgation de renseignements personnels peuvent être effectuées en dehors des termes mentionnés ici dans la mesure prévue par toute loi applicable en matière de protection de la vie privée ou autre en vigueur à tout moment, ou en vertu d’ordonnances.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Contactez-nous</h3>
-            <p class="mt-4 text-lg text-gray-700">Pour plus de renseignements sur Canada-Credit et la confidentialité, veuillez contacter notre Agent de la protection de la vie privée à : <a href="mailto:info@canada-credit.fr">info@canada-credit.fr</a>. Si vous n’êtes pas satisfait de la façon dont Canada-Credit traite vos renseignements personnels, vous avez le droit de porter plainte auprès du Commissariat à la protection de la vie privée.</p>
-            <a href="./home" class="mt-6 inline-block rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500">Retour à l'accueil</a>
-        </div>
-    </main>
+    <!-- Hero Section -->
+    <section class="relative gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
 
-
-
-   <!-- Footer -->
-<footer class=" bg-gray-800">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="flex justify-center text-teal-600 text-teal-300">
-            <h2 class="text-2xl text-neutral-50 font-semibold">canada-credit</h2>
-        </div>
-
-        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed  text-gray-300 font-semibold">
-            FINANCE PRÊT ET RAPIDE
-        </p>
-
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./home">
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./about">
-                    A propos
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./loan-hypo">
-                    Prêts hypothécaires-personnels
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./investment">
-                    Investissements
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./contact">
-                    Faire une demande
-                </a>
-            </li>
-        </ul>
-
-        <div class="mt-10 max-w-6xl  flex flex-col md:flex justify-center gap-6 md:gap-8">
-            <div
-                class="flex justify-center list-none mx-auto max-sm:text-center space-x-5 max-md:flex-col items-center order-first md:order-none">
-                <div>
-                    <span class="font-semibold text-green-400">Noms :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 9491-3282 QUÉBEC INC.</span>
+        <div class="container mx-auto px-4 section-padding relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2 mb-6 glass-effect">
+                    <i class="fas fa-shield-alt text-yellow-400"></i>
+                    <span class="text-sm font-semibold">Dernière mise à jour : 16 août 2023</span>
                 </div>
-                <div class="">
-                    <span class="font-semibold  text-green-400">Numéro Permis d'autorisation :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 17382-2 21</span>
-                </div>
-                <div class=" ">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                    <span class="font-semibold text-green-400">Adresse service :</span>
-                    <span class="text-neutral-50 text-sm w-full"> RUE DU MAROC Candiac J5R5W9</span>
-                </div>
-            </div>
-                  <!-- Legal Section -->
-            <div class="my-2 text-center text-gray-300">
-                <p class="text-sm mb-2">
-                    <!--<a href="./legal" class="text-green-400 hover:text-green-500">Mentions légales</a> | -->
-                    <a href="./privacy-policy" class="text-green-400 hover:text-green-500">Politique de confidentialité</a> | 
-                    <!--<a href="./general-terms" class="text-green-400 hover:text-green-500">Conditions générales de prêt</a> | -->
-                    <a href="./acessibility" class="text-green-400 hover:text-green-500">Accessibilité</a> | 
-                    <a href="./terms-of-use" class="text-green-400 hover:text-green-500">Conditions générales d'utilisation</a>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Politique de <span class="text-gradient">Confidentialité</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Découvrez comment Canada-Credit protège vos données personnelles et respecte votre vie privée en toute transparence.
                 </p>
-            </div>
-            
-            <div class="flex max-md:mx-auto space-x-4 justify-center items-center md:flex-row">
-                <div
-                    class="card bg-blue-600 hover:bg-blue-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-white size-8 justify-center h-fit w-fit flex items-center"></i>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#politique" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        Consulter la Politique
+                        <i class="fas fa-arrow-down ml-2"></i>
                     </a>
-                </div>
-                <div
-                    class="card bg-gray-600 hover:bg-gray-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Phone</span>
-                        <i class="fas fa-phone size-8 justify-center h-fit w-fit flex text-white items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-green-600 hover:bg-green-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                        class="text-gray-200 justify-center flex  ">
-                        <span class="sr-only">WhatsApp</span>
-                        <i class="fab fa-whatsapp size-8 justify-center h-fit w-fit flex items-center text-white"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-red-600 hover:bg-red-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="mailto:info@canada-credit.fr" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Email</span>
-                        <i class="fas fa-envelope size-8 justify-center h-fit text-white w-fit flex items-center"></i>
+                    <a href="#contact" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-question-circle mr-2"></i>
+                        Questions ?
                     </a>
                 </div>
             </div>
         </div>
-        <!-- copyright -->
-            <div class="my-5 text-center ">
-                <p class="text-sm text-gray-300">© 2025 canada-credit. Tous droits réservés.</p>
-                 <a class='text-sm text-green-400 mt-5 hover:text-yellow-500' href="https://wa.me/2290161151093">Bestdev</a>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="bg-gray-50 py-8 border-b border-gray-200 sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <nav class="flex flex-wrap justify-center gap-2">
+                    <a href="#collecte" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-database mr-2 text-blue-500"></i>
+                        Collecte
+                    </a>
+                    <a href="#utilisation" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-cogs mr-2 text-green-500"></i>
+                        Utilisation
+                    </a>
+                    <a href="#partage" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-share-alt mr-2 text-purple-500"></i>
+                        Partage
+                    </a>
+                    <a href="#securite" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-lock mr-2 text-orange-500"></i>
+                        Sécurité
+                    </a>
+                    <a href="#droits" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-user-shield mr-2 text-red-500"></i>
+                        Vos Droits
+                    </a>
+                </nav>
             </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="politique" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <!-- Introduction -->
+                <div class="legal-section fade-in">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 mb-8 border border-blue-100">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Déclaration de Confidentialité</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Cette politique explique les politiques de collecte, d'utilisation et de divulgation de renseignements personnels de Canada-Credit.
+                            Nous respectons les lois applicables en matière de protection de la vie privée, notamment la Loi sur la production de renseignements
+                            personnels et les documents électroniques.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 1 -->
+                <div id="collecte" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-database text-blue-600 mr-3 text-2xl"></i>
+                        Les Renseignements Que Nous Recueillons
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Canada-Credit offre des services de consultation en matière de crédits. Les types de renseignements personnels que nous pouvons recueillir comprennent :
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-blue-50 rounded-lg p-4">
+                                <h4 class="font-semibold text-blue-900 mb-2">Informations Personnelles</h4>
+                                <ul class="text-blue-800 text-sm space-y-1">
+                                    <li>• Nom et coordonnées</li>
+                                    <li>• Date de naissance</li>
+                                    <li>• Langue de préférence</li>
+                                    <li>• Noms d'utilisateur des médias sociaux</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-green-50 rounded-lg p-4">
+                                <h4 class="font-semibold text-green-900 mb-2">Informations Financières</h4>
+                                <ul class="text-green-800 text-sm space-y-1">
+                                    <li>• Renseignements sur la solvabilité</li>
+                                    <li>• Renseignements sur la dette</li>
+                                    <li>• Revenu et informations financières</li>
+                                    <li>• Historique de crédit</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                            <p class="text-yellow-800 font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                Nous pouvons enregistrer les appels à des fins de précision, d'analyse du rendement et de formation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="utilisation" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-cogs text-green-600 mr-3 text-2xl"></i>
+                        Comment Nous Utilisons Ces Renseignements
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Ces renseignements personnels sont uniquement utilisés à des fins de service au client. Les coordonnées du client peuvent également
+                            être utilisées à d'autres fins internes, comme pour l'envoi des bulletins électroniques, des mises à jour, des annonces de Canada-Credit
+                            ou d'autres renseignements pour mieux servir nos clients.
+                        </p>
+
+                        <div class="bg-green-50 rounded-lg p-6 border border-green-200">
+                            <h4 class="text-lg font-semibold text-green-900 mb-3">Utilisations Principales</h4>
+                            <div class="grid md:grid-cols-2 gap-4 text-green-800">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Service client personnalisé</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Consultations en matière de crédit</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Communications importantes</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Amélioration de nos services</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="partage" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-share-alt text-purple-600 mr-3 text-2xl"></i>
+                        Avec Qui Partageons-Nous Ces Renseignements ?
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Canada-Credit ne partage pas les renseignements personnels avec des tiers, sauf si nécessaire pour fournir ou améliorer nos services.
+                            La nature de nos services exige que Canada-Credit divulgue des renseignements personnels aux créanciers.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                                <h4 class="font-semibold text-purple-900 mb-2">Partage Nécessaire</h4>
+                                <p class="text-purple-800 text-sm">
+                                    Nous pouvons fournir des renseignements personnels à nos consultants, sous-traitants et conseillers professionnels
+                                    (chacun d'eux étant lié par des obligations de confidentialité) afin de soutenir les services que nous vous offrons.
+                                </p>
+                            </div>
+
+                            <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                                <h4 class="font-semibold text-red-900 mb-2">Obligations Légales</h4>
+                                <p class="text-red-800 text-sm">
+                                    Canada-Credit divulguera des renseignements personnels si nous recevons une ordonnance, une assignation, un mandat
+                                    ou toute autre exigence légale émise par une cour, un tribunal, un organisme de réglementation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="securite" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-lock text-orange-600 mr-3 text-2xl"></i>
+                        Sécurité de Vos Données
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Les renseignements personnels des clients sont classés dans une combinaison de dossiers imprimés et électroniques.
+                            Ces dossiers sont protégés par des mesures de sécurité appropriées à la nature des renseignements.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-orange-50 rounded-lg p-6 border border-orange-200">
+                                <h4 class="text-lg font-semibold text-orange-900 mb-3">Mesures de Sécurité</h4>
+                                <ul class="text-orange-800 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-shield-alt text-orange-600 mr-3 mt-1 flex-shrink-0"></i>
+                                        <span>Données chiffrées de passage et inactives</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-sync-alt text-orange-600 mr-3 mt-1 flex-shrink-0"></i>
+                                        <span>Sauvegardes quotidiennes chiffrées</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-eye-slash text-orange-600 mr-3 mt-1 flex-shrink-0"></i>
+                                        <span>Système d'isolement et vérification systématique</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                                <h4 class="text-lg font-semibold text-blue-900 mb-3">Notification en Cas d'Incident</h4>
+                                <p class="text-blue-800">
+                                    <i class="fas fa-bell text-blue-600 mr-2"></i>
+                                    Vous serez rapidement averti par écrit en cas de vol, perte, utilisation non autorisée
+                                    ou publication de vos renseignements personnels confidentiels.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div id="droits" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-user-shield text-red-600 mr-3 text-2xl"></i>
+                        Vos Droits et Contrôles
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-4">Accès et Correction</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Les individus peuvent examiner leurs renseignements personnels contenus dans nos dossiers.
+                                    Si ces renseignements personnels sont inexacts, nous apporterons les corrections nécessaires.
+                                </p>
+
+                                <div class="bg-green-50 rounded-lg p-4">
+                                    <p class="text-green-800 font-semibold">
+                                        <i class="fas fa-edit text-green-600 mr-2"></i>
+                                        Contactez notre Agent de la protection de la vie privée pour accéder à vos données.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-4">Désabonnement</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Vous pouvez vous désabonner de l'infolettre ou de toute autre liste de courriels à tout moment
+                                    en suivant les instructions à la fin des communications que vous recevez.
+                                </p>
+
+                                <div class="bg-blue-50 rounded-lg p-4">
+                                    <p class="text-blue-800 font-semibold">
+                                        <i class="fas fa-envelope-slash text-blue-600 mr-2"></i>
+                                        Les communications liées au service à la clientèle continueront d'être envoyées.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contact" class="legal-section fade-in">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center text-white shadow-xl">
+                        <h3 class="text-3xl text-white font-bold mb-6">Questions sur la Confidentialité ?</h3>
+                        <p class="text-blue-100 mb-8 text-xl max-w-2xl mx-auto leading-relaxed">
+                            Notre Agent de la protection de la vie privée est à votre disposition pour répondre
+                            à toutes vos questions concernant la protection de vos données personnelles.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                            <a href="mailto:info@canada-credit.fr" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 font-semibold">
+                                <i class="fas fa-envelope mr-3"></i>
+                                info@canada-credit.fr
+                            </a>
+                            <a href="./contact" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg font-semibold">
+                                <i class="fas fa-headset mr-3"></i>
+                                Formulaire de Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back to Home -->
+                <div class="text-center mt-12 fade-in">
+                    <a href="./home" class="btn-primary text-lg px-8 py-4 inline-flex items-center font-semibold">
+                        <i class="fas fa-home mr-3"></i>
+                        Retour à l'Accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                        <span class="text-xl font-bold">Canada<span class="text-blue-400">Credit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm">
+                        Votre partenaire de confiance pour tous vos projets de financement
+                        au Canada. Solutions personnalisées et accompagnement expert.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://m.me/129521570254817?source=qr_link_share" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="tel:+14509151328" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:info@canada-credit.fr" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liens Rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./home" class="text-gray-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                        <li><a href="./about" class="text-gray-400 hover:text-white transition-colors text-sm">À Propos</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêts Hypothécaires</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissements</a></li>
+                        <li><a href="./contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Nos Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Immobilier</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Personnel</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissement</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Simulation en Ligne</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">RUE DU MAROC Candiac J5R5W9</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (450) 915-1328</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@canada-credit.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">9491-3282 QUÉBEC INC.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Canada-Credit. Tous droits réservés.
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <a href="./privacy-policy" class="text-blue-400 font-semibold transition-colors text-sm">Politique de confidentialité</a>
+                        <a href="./general-terms" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions générales de prêt</a>
+                        <a href="./acessibility" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibilité</a>
+                        <a href="./terms-of-use" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions d'utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+           class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors animate-bounce"
+           title="Contact WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+        <button id="scrollToTop"
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors"
+                title="Remonter en haut">
+            <i class="fas fa-chevron-up text-lg"></i>
+        </button>
     </div>
-    
-    </div>
-</footer>
-    
-    
-        <button id="scrollToTop" class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-lg p-4 px-5 shadow-xl hover:bg-blue-500 transition-colors duration-300" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top
         const scrollToTopButton = document.getElementById('scrollToTop');
 
         window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'flex';
             } else {
                 scrollToTopButton.style.display = 'none';
             }
@@ -360,8 +650,39 @@
                 behavior: 'smooth'
             });
         });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
-
 </body>
-
 </html>

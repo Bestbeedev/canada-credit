@@ -5,355 +5,527 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Investissez intelligemment avec Canada-Credit ! Obtenez des prêts hypothécaires et immobiliers pour maximiser vos profits et sécuriser votre avenir financier." />
-   <meta name="author" content="Canada-Credit" />
-   <meta name="keywords" content="investissement immobilier, prêt hypothécaire/personnel, financement, rentabilité, maximiser profits, Canada-Credit" />
-   <title>Investissement Rentable | Canada-Credit & Prêts Immobiliers</title>
-   <link rel="canonical" href="https://canada-credit.fr/investment" />
+    <meta name="author" content="Canada-Credit" />
+    <meta name="keywords" content="investissement immobilier, prêt hypothécaire/personnel, financement, rentabilité, maximiser profits, Canada-Credit" />
+    <title>Investissement Rentable | Canada-Credit & Prêts Immobiliers</title>
+    <link rel="canonical" href="https://canada-credit.fr/investment" />
 
-   
-      <!-- Google Tag Manager -->
-   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
-    
-   <!-- Meta for Socials Medias -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
+
+    <!-- Meta for Socials Medias -->
     <meta property="og:title" content="Investissement Rentable | Canada-Credit & Prêts Immobiliers" />
     <meta property="og:description" content="Obtenez des prêts hypothécaires-personnels et immobiliers avec Canada-Credit pour maximiser vos profits et sécuriser votre avenir financier." />
     <meta property="og:url" content="https://www.canada-credit.com/investment" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://www.canada-credit.com/images/investment.jpg" />
 
-  
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,300,400,500,700,900" rel="stylesheet" />
-    <script src="/script/main.js" defer></script>
-    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="./style.css" />
-    
-    <!-- Script Google Translate -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr', autoDisplay: false },
-                'google_translate_element'
-            );
+    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #06d6a0;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-    </script>
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sora', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
-    
-     <!-- Google Tag Manager (noscript) -->
+<body class="bg-white">
+
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <!-- Header -->
-    <header class="sticky  bg-neutral-50 shadow-lg inset-x-0 top-0 z-50">
-        <nav class="flex items-center items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="./home" class="-m-1.5 p-1.5">
-                    <span class="sr-only">canada-credit</span>
-                    <h1 class="text-2xl text-indigo-600 max-sm:text-lg  font-semibold">canada-credit</h1>
-                </a>
-            </div>
-            <div class="flex space-x-3 lg:hidden">
-                <div class="mx-4">
-                    <select id="language-select-1"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
                 </div>
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center cursor-pointer  text-neutral-600 justify-center rounded-md p-2.5 text-gray-700"
-                    id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
 
-                    <i class="fas fa-bars text-neutral-600"></i>
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
+                    <a href="./investment" class="text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
+                    <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
+                    <a href="./contact" class="btn-primary rounded-full text-sm xl:text-base">Faire une Demande</a>
+
+                    <!-- Language Selector -->
+                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="nl">🇳🇱 NL</option>
+                    </select>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-700 text-lg"></i>
                 </button>
-
-
             </div>
-            <div class="hidden lg:flex items-center  lg:gap-x-12">
-                <a href="./home" class="text-sm/6 nav-link font-semibold text-gray-900">Accueil</a>
-                <a href="./loan-hypo" class="text-sm/6 nav-link font-semibold text-gray-900">Prêts
-                    hypothécaires-personnels</a>
-                <a href="./investment"
-                    class="text-sm/6  active-link font-semibold text-gray-900">Investissements</a>
-                <a href="./about" class="text-sm/6 nav-link font-semibold text-gray-900">À propos</a>
-                <a href="./contact" class="text-sm/6 nav-link font-semibold text-gray-900">Faire une demande</a>
-                <div class="mx-4">
-                    <select id="language-select"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-6 space-y-4">
+                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
+                <a href="./investment" class="block py-3 text-blue-600 font-semibold border-b border-gray-100">Investissements</a>
+                <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
+                <a href="./contact" class="block py-4 text-center  btn-primary w-full">Faire une Demande</a>
+
+                <!-- Mobile Language Selector -->
+                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
+
+        <div class="container mx-auto px-4 section-padding relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2 mb-6 glass-effect">
+                    <i class="fas fa-chart-line text-yellow-400"></i>
+                    <span class="text-sm font-semibold">Maximisez vos profits dès aujourd'hui</span>
                 </div>
-            </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden  hidden" role="dialog" aria-modal="true" id="mobile-menu">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="./home" class="-m-1.5 p-1.5">
-                        <span class="sr-only">canada-credit</span>
-                        <h1 class="text-xl text-indigo-600 font-semibold">canada-credit</h1>
 
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Investissements <span class="text-gradient">Rentables</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Des solutions de financement intelligentes pour maximiser vos profits et sécuriser votre avenir financier grâce à l'immobilier.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="./contact" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        Investir Maintenant
+                        <i class="fas fa-arrow-right ml-2"></i>
                     </a>
-                    <button type="button"
-                        class="-m-2.5 bg-neutral-200 cursor-pointer  border-neutral-400  rounded-md p-2 px-4 text-gray-700 text-neutral-600"
-                        id="close-mobile-menu">
-                        <span class="sr-only">Close menu</span>
-                        <i class="fas fa-times text-neutral-600"></i>
-                    </button>
+                    <a href="#solutions" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-chart-bar mr-2"></i>
+                        Nos Solutions
+                    </a>
                 </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6"></div>
-                        <a href="./home"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-                        <a href="./about"
-                            class="-mx-3 block  nav-link-mobile  rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">À
-                            propos</a>
-                        <a href="/loan-hypo"
-                            class="-mx-3 block  nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prêts
-                            hypothécaires-personnels</a>
-                        <a href="./investment.html"
-                            class="-mx-3 block active-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Investissements</a>
-                        <a href="/contact"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Faire
-                            une demande</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Solutions Section -->
+    <section id="solutions" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nos Solutions <span class="text-gradient">d'Investissement</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Choisissez la stratégie d'investissement la plus adaptée à vos objectifs financiers
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Prêt Longue Durée -->
+                <div class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Prêt Longue Durée</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Solution idéale pour les investissements à long terme avec des rendements stables et sécurisés.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Taux de réussite élevé
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Expertise gratuite
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Accompagnement complet
+                        </li>
+                    </ul>
+                    <div class="bg-blue-600/20 rounded-lg p-4 mt-4">
+                        <p class="text-blue-200 text-sm">
+                            <i class="fas fa-star mr-2"></i>
+                            Parfait pour les projets immobiliers durables
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Deuxième Prêt Hypothécaire -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border border-gray-100 fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Deuxième Prêt Hypothécaire</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Optimisez votre portefeuille immobilier avec des options compétitives sélectionnées parmi nos partenaires.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Options compétitives
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Décisions éclairées
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Accompagnement expert
+                        </li>
+                    </ul>
+                    <div class="bg-green-50 rounded-lg p-4 mt-4">
+                        <p class="text-green-700 text-sm font-semibold">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            Idéal pour diversifier vos investissements
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Premier Emprunt Immobilier -->
+                <div class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-hand-holding-usd text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Premier Emprunt Immobilier</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Obtenez les meilleurs rendements avec une solution accessible et facile à comprendre.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Meilleurs rendements
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Solution accessible
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            Équipe qualifiée
+                        </li>
+                    </ul>
+                    <div class="bg-purple-600/20 rounded-lg p-4 mt-4">
+                        <p class="text-purple-200 text-sm">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Parfait pour les nouveaux investisseurs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="max-w-4xl mx-auto mt-16 fade-in">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+                        Pourquoi Investir avec <span class="text-gradient">Canada-Credit</span> ?
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-blue-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-2">Sécurité Maximale</h4>
+                                <p class="text-gray-600">Vos investissements sont protégés par notre expertise et notre réseau de partenaires fiables.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-chart-line text-green-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-2">Rendements Optimisés</h4>
+                                <p class="text-gray-600">Nous maximisons vos profits grâce à des stratégies d'investissement éprouvées.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users text-purple-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-2">Accompagnement Personnalisé</h4>
+                                <p class="text-gray-600">Notre équipe d'experts vous guide à chaque étape de votre projet d'investissement.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bolt text-orange-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-2">Processus Rapide</h4>
+                                <p class="text-gray-600">Obtenez votre financement en 24h et commencez à investir rapidement.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </header>
+    </section>
 
-
-    <!-- Features-->
-    <div class="relative isolate bg-white px-6 py-24 sm:py-24 lg:px-1">
-        <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
-            <div class="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
-        <div class="mx-auto max-w-4xl text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600">Avec nous,</h2>
-            <p class="mt-2 text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">
-                Réaliser les
-                meilleurs investissements</p>
-        </div>
-        <p class="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty text-gray-600 sm:text-xl/8">
-            Choisissez votre investissement et maximisez au convenablement vos profits</p>
-        <div
-            class="mx-auto mt-16 grid lg:max-w-5xl max-w-3xl grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-3">
-            <div class="relative rounded-3xl bg-gray-700 p-8 ring-1 shadow-2xl ring-gray-900/10 sm:p-10">
-                <i class="fas fa-building text-indigo-400"></i>
-                <p class="mt-4 flex items-baseline gap-x-2">
-                    <span class="text-3xl font-semibold tracking-tight lg:text-4xl text-white">Prêt hypothécaire/personnel longue
-                        durée
-                    </span>
+    <!-- CTA Section -->
+    <section class="section-padding gradient-bg text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Prêt à <span class="text-white">Maximiser</span> vos Profits ?
+                </h2>
+                <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+                    Rejoignez les investisseurs avisés qui font confiance à Canada-Credit pour leurs projets immobiliers.
+                    Démarrez votre investissement dès aujourd'hui.
                 </p>
-                <p class="mt-6 text-base/7 flex gap-x-3 text-gray-300"><svg class="h-6 w-5 flex-none text-indigo-400"
-                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd"
-                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-                            clip-rule="evenodd" />
-                    </svg>Puisez dans notre expertise et nos compétences gratuitement. Nos Prêt hypothécaire/personnel longue
-                    durée sont devenu(e)s
-                    extrêmement populaires pour beaucoup de nos clients, et nous en obtenons un taux de réussite élevé.
-                    Vous avez des
-                    questions ? Contactez-nous dès maintenant pour voir comment nous pouvons vous aider et entamer le
-                    processus de notre
-                    option de Prêt hypothécaire/personnel longue durée.</p>
-            </div>
-            <div class="rounded-3xl  bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8  sm:p-10 lg:mx-0 ">
-                <i class="fas fa-home text-indigo-600"></i>
-                <p class="mt-4 flex items-baseline gap-x-2">
-                    <span class="text-3xl font-semibold tracking-tight text-gray-900 lg:text-4xl">Deuxième prêt
-                        hypothécaire</span>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="./contact" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        Commencer à Investir
+                        <i class="fas fa-rocket ml-2"></i>
+                    </a>
+                    <a href="tel:+14509151328" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-phone mr-2"></i>
+                        +1 (450) 915-1328
+                    </a>
+                </div>
+                <p class="text-blue-200 text-sm mt-6">
+                    Analyse gratuite • Rendements optimisés • Experts disponibles 7j/7
                 </p>
-                <p class="mt-6 text-base/7 flex gap-x-3 text-gray-600"> <svg class="h-6 w-5 flex-none text-indigo-600"
-                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd"
-                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    Nous vous sélectionnons les options les plus compétitives parmi une grande variété de sociétés de
-                    prêts. canada-credit fournit aussi à chaque investisseur les informations nécessaires lui
-                    permettant de prendre les bonnes décisions concernant leur Deuxième prêt hypothécaire/personnel. Nous sommes
-                    là pour vous aider à comprendre le processus, et pour vous guider. En cas de questions,
-                    contactez-nous : nous serons ravis de vous aider.</p>
-            </div>
-            <div class="relative rounded-3xl bg-gray-700 p-8 ring-1 shadow-2xl ring-gray-900/10 sm:p-10">
-                <i class="fas fa-hand-holding-usd text-indigo-400"></i>
-                <p class="mt-4 flex items-baseline gap-x-2">
-                    <span class="text-3xl lg:text-4xl font-semibold tracking-tight text-white">Premier emprunt
-                        immobilier</span>
-                </p>
-                <p class="mt-6 text-base/7 flex gap-x-3 text-gray-300"> <svg class="h-6 w-5 flex-none text-indigo-400"
-                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd"
-                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    Nous faisons toutes les démarches pour vous obtenir les meilleurs rendements sur vos
-                    investissements. Plusieurs de nos
-                    clients aiment travailler avec notre Premier emprunt immobilier, qu’ils jugent accessible et facile
-                    à comprendre.
-                    Cependant, nos courtiers seront là pour vous guider à chaque étape du processus. Il est crucial
-                    d’avoir une équipe
-                    qualifiée à vos côtés qui peut vous aider à vous trouver la meilleure option.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-   <!-- Footer -->
-<footer class=" bg-gray-800">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="flex justify-center text-teal-600 text-teal-300">
-            <h2 class="text-2xl text-neutral-50 font-semibold">canada-credit</h2>
-        </div>
-
-        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed  text-gray-300 font-semibold">
-            FINANCE PRÊT ET RAPIDE
-        </p>
-
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./home">
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./about">
-                    A propos
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./loan-hypo">
-                    Prêts hypothécaires-personnels
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./investment">
-                    Investissements
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./contact">
-                    Faire une demande
-                </a>
-            </li>
-        </ul>
-
-        <div class="mt-10 max-w-6xl  flex flex-col md:flex justify-center gap-6 md:gap-8">
-            <div
-                class="flex justify-center list-none mx-auto max-sm:text-center space-x-5 max-md:flex-col items-center order-first md:order-none">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
                 <div>
-                    <span class="font-semibold text-green-400">Noms :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 9491-3282 QUÉBEC INC.</span>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                        <span class="text-xl font-bold">Canada<span class="text-blue-400">Credit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm">
+                        Votre partenaire de confiance pour tous vos projets de financement
+                        au Canada. Solutions personnalisées et accompagnement expert.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://m.me/129521570254817?source=qr_link_share" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="tel:+14509151328" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:info@canada-credit.fr" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="">
-                    <span class="font-semibold  text-green-400">Numéro Permis d'autorisation :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 17382-2 21</span>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liens Rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./home" class="text-gray-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                        <li><a href="./about" class="text-gray-400 hover:text-white transition-colors text-sm">À Propos</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêts Hypothécaires</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissements</a></li>
+                        <li><a href="./contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
                 </div>
-                <div class=" ">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                    <span class="font-semibold text-green-400">Adresse service :</span>
-                    <span class="text-neutral-50 text-sm w-full"> RUE DU MAROC Candiac J5R5W9</span>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Nos Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Immobilier</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Personnel</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissement</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Simulation en Ligne</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">RUE DU MAROC Candiac J5R5W9</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (450) 915-1328</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@canada-credit.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">9491-3282 QUÉBEC INC.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-                  <!-- Legal Section -->
-            <div class="my-2 text-center text-gray-300">
-                <p class="text-sm mb-2">
-                    <!--<a href="./legal" class="text-green-400 hover:text-green-500">Mentions légales</a> | -->
-                    <a href="./privacy-policy" class="text-green-400 hover:text-green-500">Politique de confidentialité</a> | 
-                    <!--<a href="./general-terms" class="text-green-400 hover:text-green-500">Conditions générales de prêt</a> | -->
-                    <a href="./acessibility" class="text-green-400 hover:text-green-500">Accessibilité</a> | 
-                    <a href="./terms-of-use" class="text-green-400 hover:text-green-500">Conditions générales d'utilisation</a>
-                </p>
-            </div>
-            
-            <div class="flex max-md:mx-auto space-x-4 justify-center items-center md:flex-row">
-                <div
-                    class="card bg-blue-600 hover:bg-blue-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-white size-8 justify-center h-fit w-fit flex items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-gray-600 hover:bg-gray-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Phone</span>
-                        <i class="fas fa-phone size-8 justify-center h-fit w-fit flex text-white items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-green-600 hover:bg-green-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                        class="text-gray-200 justify-center flex  ">
-                        <span class="sr-only">WhatsApp</span>
-                        <i class="fab fa-whatsapp size-8 justify-center h-fit w-fit flex items-center text-white"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-red-600 hover:bg-red-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="mailto:info@canada-credit.fr" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Email</span>
-                        <i class="fas fa-envelope size-8 justify-center h-fit text-white w-fit flex items-center"></i>
-                    </a>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Canada-Credit. Tous droits réservés.
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <a href="./privacy-policy" class="text-gray-400 font-semibold transition-colors text-sm">Politique de confidentialité</a>
+                        <a href="./general-terms" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions générales de prêt</a>
+                        <a href="./acessibility" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibilité</a>
+                        <a href="./terms-of-use" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions d'utilisation</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- copyright -->
-            <div class="my-5 text-center ">
-                <p class="text-sm text-gray-300">© 2025 canada-credit. Tous droits réservés.</p>
-                 <a class='text-sm text-green-400 mt-5 hover:text-yellow-500' href="https://wa.me/2290161151093">Bestdev</a>
-            </div>
-    </div>
-    
-    </div>
-</footer>
+    </footer>
 
-    <button id="scrollToTop" class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-lg p-4 px-5 shadow-xl hover:bg-blue-500 transition-colors duration-300" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+           class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors animate-bounce"
+           title="Contact WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+        <button id="scrollToTop"
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors"
+                title="Remonter en haut">
+            <i class="fas fa-chevron-up text-lg"></i>
+        </button>
+    </div>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top
         const scrollToTopButton = document.getElementById('scrollToTop');
 
         window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'flex';
             } else {
                 scrollToTopButton.style.display = 'none';
             }
@@ -365,8 +537,25 @@
                 behavior: 'smooth'
             });
         });
-    </script>
-    
-</body>
 
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>

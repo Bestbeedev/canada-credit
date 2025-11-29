@@ -4,610 +4,694 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-   <meta name="description" content="Besoin d’un prêt ou de conseils financiers ? Contactez Canada-Credit dès maintenant pour un financement rapide et personnalisé. Réponse rapide garantie !" />
-  <meta name="author" content="Canada-Credit" />
-  <title>Contactez Canada-Credit | Prêt Rapide & Financement Facile</title>
-  <link rel="canonical" href="https://canada-credit.fr/contact" />
+    <meta name="description" content="Besoin d'un prêt ou de conseils financiers ? Contactez Canada-Credit dès maintenant pour un financement rapide et personnalisé. Réponse rapide garantie !" />
+    <meta name="author" content="Canada-Credit" />
+    <title>Contactez Canada-Credit | Prêt Rapide & Financement Facile</title>
+    <link rel="canonical" href="https://canada-credit.fr/contact" />
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
 
-      <!-- Google Tag Manager -->
-   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
-   
-
-   <!-- Meta for Socials Medias -->
+    <!-- Meta for Socials Medias -->
     <meta property="og:title" content="Contactez Canada-Credit | Prêt Rapide & Financement Facile" />
-   <meta property="og:description" content="Contactez Canada-Credit pour un financement rapide et personnalisé. Obtenez des conseils financiers adaptés à vos besoins !" />
-  <meta property="og:url" content="https://www.canada-credit.com/contact" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.canada-credit.com/images/contact.jpg" />
+    <meta property="og:description" content="Contactez Canada-Credit pour un financement rapide et personnalisé. Obtenez des conseils financiers adaptés à vos besoins !" />
+    <meta property="og:url" content="https://www.canada-credit.com/contact" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.canada-credit.com/images/contact.jpg" />
 
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,300,400,500,700,900" rel="stylesheet" />
-    <script src="/script/main.js" defer></script>
-    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="./script/form.js" defer></script>
-    <script src="./script/amortization.js" defer></script>
-    <link rel="stylesheet" href="./style.css" />
-    
-    
-    <!-- Script Google Translate -->
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr', autoDisplay: false },
-                'google_translate_element'
-            );
+    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #06d6a0;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-    </script>
-    
-    <!-- Print document pdf cdn -->    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.1.0/dom-to-image-more.min.js"></script>
-     
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sora', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Styles pour les modals et tableaux */
+        .modal-overlay {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .amortization-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .amortization-table th,
+        .amortization-table td {
+            border: 1px solid #e2e8f0;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .amortization-table th {
+            background-color: #f8fafc;
+            font-weight: 600;
+        }
+
+        .amortization-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
-    
-     <!-- Google Tag Manager (noscript) -->
+<body class="bg-white">
+
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <!-- Header -->
-    <header class="sticky bg-neutral-50 shadow-lg inset-x-0 top-0 z-50">
-        <nav class="flex items-center justify-between px-6 py-3  lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="./home" class="-m-1.5 p-1.5">
-                    <span class="sr-only">canada-credit</span>
-                    <h1 class="text-2xl text-indigo-600 max-sm:text-lg  font-semibold">canada-credit</h1>
-                </a>
-            </div>
-            <div class="flex space-x-3 lg:hidden">
-                <div class="mx-4">
-                    <select id="language-select-1"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 Anglais</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
                 </div>
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center cursor-pointer text-neutral-600 justify-center rounded-md p-2.5 text-gray-700"
-                    id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars text-neutral-600"></i>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
+                    <a href="./investment" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
+                    <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
+                    <a href="./contact" class="btn-primary text-sm xl:text-base">Faire une Demande</a>
+
+                    <!-- Language Selector -->
+                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="nl">🇳🇱 NL</option>
+                    </select>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-700 text-lg"></i>
                 </button>
             </div>
-            <div class="hidden lg:flex items-center lg:gap-x-12">
-                <a href="./home" class="text-sm/6 nav-link font-semibold text-gray-900">Accueil</a>
-                <a href="./loan-hypo" class="text-sm/6 nav-link font-semibold text-gray-900">Prêts
-                    hypothécaires-personnels</a>
-                <a href="./investment" class="text-sm/6 nav-link font-semibold text-gray-900">Investissements</a>
-                <a href="./about" class="text-sm/6 nav-link font-semibold text-gray-900">À propos</a>
-                <a href="./contact" class="text-sm/6 active-link font-semibold text-gray-900">Faire une demande</a>
-                <div class="mx-4">
-                    <select id="language-select"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
-                </div>
-            </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden  hidden" role="dialog" aria-modal="true" id="mobile-menu">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="./home" class="-m-1.5 p-1.5">
-                        <span class="sr-only">canada-credit</span>
-                        <h1 class="text-xl text-indigo-600 font-semibold">canada-credit</h1>
-
-                    </a>
-                    <button type="button"
-                        class="-m-2.5 bg-neutral-200 cursor-pointer  border-neutral-400  rounded-md p-2 px-4 text-gray-700 text-neutral-600"
-                        id="close-mobile-menu">
-                        <span class="sr-only">Close menu</span>
-                        <i class="fas fa-times text-neutral-600"></i>
-                    </button>
-                </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6"></div>
-                        <a href="./home"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-                        <a href="./about"
-                            class="-mx-3 block  nav-link-mobile  rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">À
-                            propos</a>
-                        <a href="/loan-hypo"
-                            class="-mx-3 block  nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prêts
-                            hypothécaires-personnels</a>
-                        <a href="./investment"
-                            class="-mx-3 blockrounded-lg nav-link-mobile  px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Investissements</a>
-                        <a href="/contact"
-                            class="-mx-3 block  active-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Faire
-                            une demande</a>
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-6 space-y-4">
+                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
+                <a href="./investment" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Investissements</a>
+                <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
+                <a href="./contact" class="block py-4 text-center btn-primary w-full">Faire une Demande</a>
+
+                <!-- Mobile Language Selector -->
+                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="relative gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
 
-    <!--Contact plan--->
-    <div class="bg-white isolate py-20 sm:py-32">
-        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-            aria-hidden="true">
-            <div class="relative left-1/2 -z-10 aspect-1155/678 w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-             <div class="mx-auto max-w-2xl pb-10 text-center">
-                <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Faire une
-                    demande
-                </h2>
-                <p class="mt-2 text-lg/8 text-gray-600">Pour tous vos besoin de prêt à longue ou courte terme; nous vous
-                    prions de
-                    bien vouloir remplir les exigences ci-joint
-                    et vous serez contacté par l'un de nos services clientèles dans les minutes à suivre</p>
-                <button id="open-modal-amortization"
-                    class="block w-fit mx-auto my-5 rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white border border-neutral-300 hover:bg-indigo-500 focus:outline-indigo-600">
-                    Passer à la demande
-                </button>
-            </div>
-
-            <div class="mx-auto max-w-2xl pb-10 text-center">
-                <h3 class="mt-6 text-xl text-gray-600">Vous pouvez nous écrire sur les plateformes ci dessous pour effectuer vos demande</h3>
-            </div>
-            
-            <dl class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-16 text-center lg:grid-cols-4">
-                <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                    class="mx-auto cursor-pointer flex justify-center items-center bg-[#1877F2] rounded-lg p-8 w-full max-w-xs flex-col hover:bg-[#145dbf]">
-                    <i class="fab fa-facebook size-8 text-white"></i>
-                    <span
-                        class="order-second text-2xl font-semibold tracking-tight text-white sm:text-3xl">Facebook</span>
-                </a>
-                <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                    class="mx-auto cursor-pointer flex justify-center items-center bg-[#25D366] rounded-lg p-8 w-full max-w-xs flex-col hover:bg-[#1da851]">
-                    <i class="fab fa-whatsapp size-8 text-white"></i>
-                    <span
-                        class="order-second text-2xl font-semibold tracking-tight text-white sm:text-3xl">WhatsApp</span>
-                </a>
-                <div id="choice-contact"
-                    class="mx-auto flex flex-col cursor-pointer justify-center h-fit items-center bg-[#D44638] rounded-lg p-8 w-full max-w-xs hover:bg-[#b33a2e]">
-                    <i class="fas fa-envelope size-8 text-white"></i>
-                    <dd class="order-second text-2xl font-semibold tracking-tight text-white sm:text-3xl">Boite Gmail
-                    </dd>
+        <div class="container mx-auto px-4 section-padding relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2 mb-6 glass-effect">
+                    <i class="fas fa-headset text-yellow-400"></i>
+                    <span class="text-sm font-semibold">Réponse rapide garantie</span>
                 </div>
-                <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                    class="mx-auto cursor-pointer flex justify-center items-center bg-[#0077B5] rounded-lg p-8 w-full max-w-xs flex-col hover:bg-[#005582]">
-                    <i class="fas fa-phone size-8 text-white"></i>
-                    <span
-                        class="order-second text-2xl font-semibold tracking-tight text-white sm:text-3xl">Telephone</span>
-                </a>
-            </dl>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Faire une <span class="text-gradient">Demande</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Pour tous vos besoins de prêt à longue ou courte terme, contactez-nous dès aujourd'hui et obtenez une réponse rapide.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button id="open-modal-amortization" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        Passer à la Demande
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <a href="#contact-methods" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-comments mr-2"></i>
+                        Autres Méthodes
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section id="contact-methods" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nos <span class="text-gradient">Canaux de Contact</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Choisissez la méthode qui vous convient le mieux pour nous contacter
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Facebook -->
+                <a href="https://m.me/129521570254817?source=qr_link_share" target="_blank" class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center fade-in">
+                    <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-facebook-f text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Facebook</h3>
+                    <p class="text-gray-600 mb-6">
+                        Contactez-nous via Messenger pour une réponse rapide et personnalisée.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <p class="text-blue-700 text-sm font-semibold">
+                            <i class="fas fa-clock mr-2"></i>
+                            Réponse en moins de 24h
+                        </p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/message/YPLFYRWPYDEJJ1" target="_blank" class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center fade-in">
+                    <div class="w-20 h-20 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-whatsapp text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">WhatsApp</h3>
+                    <p class="text-gray-600 mb-6">
+                        Échangez directement avec nos conseillers pour un service rapide.
+                    </p>
+                    <div class="bg-green-50 rounded-lg p-4">
+                        <p class="text-green-700 text-sm font-semibold">
+                            <i class="fas fa-bolt mr-2"></i>
+                            Réponse immédiate
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center fade-in cursor-pointer" id="choice-contact">
+                    <div class="w-20 h-20 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Boite Gmail</h3>
+                    <p class="text-gray-600 mb-6">
+                        Envoyez-nous un email détaillé pour une analyse approfondie de votre projet.
+                    </p>
+                    <div class="bg-red-50 rounded-lg p-4">
+                        <p class="text-red-700 text-sm font-semibold">
+                            <i class="fas fa-file-alt mr-2"></i>
+                            Réponse sous 48h
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Téléphone -->
+                <a href="tel:+14509151328" class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center fade-in">
+                    <div class="w-20 h-20 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Téléphone</h3>
+                    <p class="text-gray-600 mb-6">
+                        Appelez-nous directement pour un échange immédiat avec nos experts.
+                    </p>
+                    <div class="bg-purple-50 rounded-lg p-4">
+                        <p class="text-purple-700 text-sm font-semibold">
+                            <i class="fas fa-user-check mr-2"></i>
+                            Conseiller dédié
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Notre <span class="text-gradient">Localisation</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Retrouvez-nous à notre bureau pour discuter de vos projets financiers.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <div class="h-[400px] rounded-lg overflow-hidden" id="map"></div>
+                <div class="p-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-bold mb-2">Adresse</h3>
+                            <p>RUE DU MAROC Candiac J5R5W9</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Entreprise</h3>
+                            <p>9491-3282 QUÉBEC INC.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Permis</h3>
+                            <p>Numéro: 17382-2 21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                        <span class="text-xl font-bold">Canada<span class="text-blue-400">Credit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm">
+                        Votre partenaire de confiance pour tous vos projets de financement
+                        au Canada. Solutions personnalisées et accompagnement expert.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://m.me/129521570254817?source=qr_link_share" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="tel:+14509151328" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:info@canada-credit.fr" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liens Rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./home" class="text-gray-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                        <li><a href="./about" class="text-gray-400 hover:text-white transition-colors text-sm">À Propos</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêts Hypothécaires</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissements</a></li>
+                        <li><a href="./contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Nos Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Immobilier</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Personnel</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissement</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Simulation en Ligne</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">RUE DU MAROC Candiac J5R5W9</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (450) 915-1328</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@canada-credit.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">9491-3282 QUÉBEC INC.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Canada-Credit. Tous droits réservés.
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <a href="./privacy-policy" class="text-gray-400 font-semibold transition-colors text-sm">Politique de confidentialité</a>
+                        <a href="./general-terms" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions générales de prêt</a>
+                        <a href="./acessibility" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibilité</a>
+                        <a href="./terms-of-use" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions d'utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+           class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors animate-bounce"
+           title="Contact WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+        <button id="scrollToTop"
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors"
+                title="Remonter en haut">
+            <i class="fas fa-chevron-up text-lg"></i>
+        </button>
     </div>
 
-    <!-- Modal -->
-    <div id="contact-form-via-choice"
-        class="isolate hidden fixed inset-0 z-50 flex items-center justify-center bg-neutral-900 bg-opacity-90 h-screen overflow-y-auto">
-        <div
-            class="relative bg-neutral-50 how-it-work-1 px-6 py-8 pb-32 sm:py-8 lg:px-8 max-w-2xl max-sm:w-[96vw] rounded-md h-[90vh] overflow-y-auto">
+    <!-- Modal Email Contact -->
+    <div id="contact-form-via-choice" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 h-screen overflow-y-auto hidden">
+        <div class="relative bg-white rounded-lg p-6 w-11/12 max-w-2xl max-h-[90vh] overflow-y-auto">
             <!-- Bouton de fermeture -->
-            <button id="close-modal" class="fixed cursor-pointer top-2 right-3 text-gray-700 text-xl">
-                <i class="fa-solid fa-times"></i>
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-700 text-xl cursor-pointer">
+                <i class="fas fa-times"></i>
             </button>
 
-            <div class="mx-auto max-w-2xl text-start">
-                <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Nous écrire
-                </h2>
-                <p class="mt-2 text-lg/8 text-gray-600">Pour tous vos besoins de prêt à long ou court terme, veuillez
-                    remplir le formulaire ci-dessous et nous vous contacterons sous peu de temps.</p>
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold text-gray-900">Nous écrire</h2>
+                <p class="mt-2 text-gray-600">Pour tous vos besoins de prêt à long ou court terme, veuillez remplir le formulaire ci-dessous et nous vous contacterons sous peu de temps.</p>
             </div>
 
-            <form method="POST" action="https://api.web3forms.com/submit"  id="contact-form" class="mx-auto mt-6 max-w-xl">
+            <form method="POST" action="https://api.web3forms.com/submit" id="contact-form" class="space-y-6">
                 <input id="access_key" type="hidden" name="access_key" value="c0137336-7bb2-4794-a686-97a69f5ae7c2">
-                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label for="first-name" class="block text-sm font-semibold text-gray-900">Prénom</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900  border placeholder:text-gray-400 focus:outline-indigo-600"
-                                >
-                            <div class="error-msg" id="first-name-error" style="color: red; display: none;"></div>
-                        </div>
+                        <label for="first-name" class="block text-sm font-semibold text-gray-900 mb-2">Prénom</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            required>
+                        <div class="error-msg" id="first-name-error" style="color: red; display: none;"></div>
                     </div>
                     <div>
-                        <label for="last-name" class="block text-sm font-semibold text-gray-900">Nom</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border placeholder:text-gray-400 focus:outline-indigo-600"
-                                >
-                            <div class="error-msg" id="last-name-error" style="color: red; display: none;"></div>
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="objet" class="block text-sm font-semibold text-gray-900">Objet</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="objet" id="objet" autocomplete="off"
-                                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border placeholder:text-gray-400 focus:outline-indigo-600">
-                            <div class="error-msg" id="objet-error" style="color: red; display: none;"></div>
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="email" class="block text-sm font-semibold text-gray-900">Email</label>
-                        <div class="mt-2.5">
-                            <input type="email" name="email" id="email" autocomplete="email"
-                                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border placeholder:text-gray-400 focus:outline-indigo-600"
-                                >
-                            <div class="error-msg" id="email-error" style="color: red; display: none;"></div>
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="message" class="block text-sm font-semibold text-gray-900">Message</label>
-                        <div class="mt-2.5">
-                            <textarea name="message" id="message" rows="4"
-                                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border placeholder:text-gray-400 focus:outline-indigo-600"
-                                ></textarea>
-                            <div class="error-msg" id="message-error" style="color: red; display: none;"></div>
-                        </div>
+                        <label for="last-name" class="block text-sm font-semibold text-gray-900 mb-2">Nom</label>
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            required>
+                        <div class="error-msg" id="last-name-error" style="color: red; display: none;"></div>
                     </div>
                 </div>
+
+                <div>
+                    <label for="objet" class="block text-sm font-semibold text-gray-900 mb-2">Objet</label>
+                    <input type="text" name="objet" id="objet" autocomplete="off"
+                        class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required>
+                    <div class="error-msg" id="objet-error" style="color: red; display: none;"></div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="email"
+                        class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required>
+                    <div class="error-msg" id="email-error" style="color: red; display: none;"></div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                    <textarea name="message" id="message" rows="4"
+                        class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required></textarea>
+                    <div class="error-msg" id="message-error" style="color: red; display: none;"></div>
+                </div>
+
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <div class="mt-6">
+
+                <div>
                     <button type="submit"
-                        class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-indigo-600">
+                        class="btn-primary w-full text-lg py-3">
                         Envoyer le message
+                        <i class="fas fa-paper-plane ml-2"></i>
                     </button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!--Section modal amortization---->
-    <section>
-        <div id="info-modal"
-            class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 overflow-y-auto">
-            <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
-                <div class="flex justify-between items-center">
-                    <h2 class="text-lg font-semibold">Calculateur d'Amortissement</h2>
-                    <button id="close-info-modal" class="text-neutral-50 bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <form id="amortization-form" class="mt-4">
-                    <div class="mb-4">
-                        <label for="loan-amount" class="block text-sm font-semibold text-gray-900 mb-1">Montant de
-                            l'emprunt</label>
-                        <div class="flex flex-col max-sm:space-y-2  sm:flex-row sm:space-x-2">
-                            <input type="number" placeholder="Exemple: 100000" id="loan-amount" required
-                                class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 placeholder:text-gray-400 focus:outline-indigo-600">
-                            <select id="currency"
-                                class=" block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 focus:outline-indigo-600">
-                                <option value="euro">Euro</option>
-                                <option value="cad">Dollar Canadien</option>
-                                <option value="usd">Dollar Américain</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="loan-term" class="block text-sm font-semibold text-gray-900 mb-1">Durée de
-                            remboursement</label>
-                        <div class="flex flex-col max-sm:space-y-2  sm:flex-row sm:space-x-2">
-                            <input type="number" placeholder="Exemple: 12" id="loan-term" required
-                                class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 placeholder:text-gray-400 focus:outline-indigo-600"
-                                placeholder="Nombre">
-                            <select id="term-unit"
-                                class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 focus:outline-indigo-600">
-                                <option value="mois">Mois</option>
-                                <option value="annee">Années</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="interest-rate" class="block text-sm font-semibold text-gray-900 mb-1">Taux nominal
-                            annuel (%)</label>
-                        <select id="interest-rate" required
-                            class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 focus:outline-indigo-600">
-                            <option value="3">3%</option>
-                            <option value="4">4%</option>
-                            <option value="5">5%</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <label for="start-year" class="block text-sm font-semibold text-gray-900 mb-1">Date de départ
-                            (1ère échéance)</label>
-                        <div class="flex flex-col max-sm:space-y-2  sm:flex-row sm:space-x-2">
-                            <input type="number" placeholder="Exemple: 2025" id="start-year" required
-                                class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 placeholder:text-gray-400 focus:outline-indigo-600"
-                                value="${new Date().getFullYear()}">
-                            <select id="start-month"
-                                class="block w-full rounded-md bg-gray-100 px-3 py-2 text-gray-900 border border-neutral-300 focus:outline-indigo-600">
-                                <option value="1">Jan</option>
-                                <option value="2">Fév</option>
-                                <option value="3">Mar</option>
-                                <option value="4">Avr</option>
-                                <option value="5">Mai</option>
-                                <option value="6">Juin</option>
-                                <option value="7">Juil</option>
-                                <option value="8">Août</option>
-                                <option value="9">Sep</option>
-                                <option value="10">Oct</option>
-                                <option value="11">Nov</option>
-                                <option value="12">Déc</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <button type="submit"
-                            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white border border-neutral-300 hover:bg-indigo-500 focus:outline-indigo-600">
-                            Calculer
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div id="table-modal"
-            class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 h-screen overflow-y-auto">
-            <div id="table-modal-content"
-                class="bg-neutral-50 rounded-lg p-6 w-11/12 max-w-5xl py-8 pb-32 sm:py-8 lg:px-8 max-sm:w-[96vw]  h-[90vh] overflow-y-auto border border-neutral-300">
-                <div class="flex justify-between items-center border-b border-neutral-300 pb-4">
-                    <h2 class="text-xl font-semibold text-neutral-500">Tableau d'Amortissement</h2>
-                    <button id="close-table-modal" class="text-neutral-50 bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="mt-4 bg-white rounded-lg border border-neutral-300 p-4">
-                    <p class="text-xl font-semibold mb-3">Paramètres du crédit:</p>
-                    <p>Montant de l'emprunt: <span class="font-semibold" id="loan-amount-display">0</span> <span
-                            class="font-semibold" id="currency-display"></span></p>
-                    <p>Durée de remboursement: <span class="font-semibold" id="loan-term-display">0</span> <span
-                            class="font-semibold" id="term-unit-display">mois</span></p>
-                    <p>Taux annuel du crédit: <span class="font-semibold" id="interest-rate-display">0</span>%</p>
-                    <p>Assurance mensuelle: <span class="font-semibold" id="insurance-display">0</span></p>
-                    <p>Début du crédit de remboursement: <span class="font-semibold" id="start-date-display">${new
-                            Date().getDate()} ${new Date().toLocaleString('default', { month: 'long' })} ${new Date().getFullYear()}</span></p>
-                    <p>Mensualité du crédit de remboursement: <span class="font-semibold"
-                            id="monthly-payment-display">0</span> <span class="font-semibold"
-                            id="currency-display"></span>
-                    </p>
-                    <p class=" my-4">Si vous êtes d'accord, veuillez taper sur <span class="text-indigo-600 font-semibold">Valider la demande</span></p>
-
-                    <div class="mt-4 bg-white/30 rounded-lg border border-neutral-200 p-4">
-                        <div id="totals" class="text-sm font-semibold text-gray-800">
-                            <p class="text-lg">Total des mensualités sans assurance: <span id="total-payments"
-                                    class="font-bold text-indigo-600">0</span> <span id="currency-display"></span></p>
-                            <p class="text-lg">Total des intérêts: <span id="total-interest"
-                                    class="font-bold text-indigo-600">0</span>
-                                <span id="currency-display"></span>
-                            </p>
-                            <button id="purchase-demand"
-                                class="my-4 block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white border border-neutral-300 hover:bg-green-500 focus:outline-green-600">
-                                <a href="https://forms.gle/VdtcErm7sKxotZf18">Valider
-                                    la demande</a>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="amortization-table"
-                    class="mt-4 bg-white rounded-lg border border-neutral-300 p-4 overflow-x-auto">
-                    <!-- Tableau d'amortissement sera généré ici -->
-                </div>
-                <button id="download-pdf"
-                    class="mb-4 block w-full my-5  rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white border border-neutral-300 hover:bg-red-500 focus:outline-red-600">
-                    Télécharger en PDF
+    <!-- Modal Calculateur d'Amortissement -->
+    <div id="info-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 overflow-y-auto hidden">
+        <div class="bg-white rounded-lg p-6 w-11/12 max-w-md">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-gray-900">Calculateur d'Amortissement</h2>
+                <button id="close-info-modal" class="text-white bg-red-500 px-3 py-1 rounded-lg hover:bg-red-600 cursor-pointer">
+                    <i class="fas fa-times"></i>
                 </button>
             </div>
-        </div>
-    </section>
 
-
-    <script>
-        document.getElementById('choice-contact').addEventListener('click', function () {
-            document.getElementById('contact-form-via-choice').classList.remove('hidden');
-        });
-
-        document.getElementById('close-modal').addEventListener('click', function () {
-            document.getElementById('contact-form-via-choice').classList.add('hidden');
-        });
-
-        window.addEventListener('click', function (event) {
-            const modal = document.getElementById('contact-form-via-choice');
-            if (event.target === modal) {
-                modal.classList.add('hidden');
-            }
-        });
-    </script>
-
-    <!--Localisation-->
-    <div class="py-2 cta-section z-0 sm:py-8">
-        <div class="mx-auto max-w-2xl py-8 text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600">Vérifiez sur la carte</h2>
-            <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Notre localisation
-            </h2>
-        </div>
-        <div class="h-[500px] z-0 rounded-md border border-gray-300 my-2 mb-4 px-4 mx-auto max-w-6xl" id="map"></div>
-
-
-
-    </div>
-
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        let map = L.map('map').setView([45.3842, -73.5159], 13); // Coordonnées du nouveau lieu
-
-        // Différents styles de carte
-        let basemaps = {
-            "Plan": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }),
-            "Satellite": L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' }),
-            "Relief": L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' })
-        };
-
-        basemaps.Plan.addTo(map); // Vue par défaut
-        L.marker([45.3842, -73.5159]).addTo(map)
-            .bindPopup("9491-3282 QUÉBEC INC.<br>Numéro Permis d'autorisation : 17382-2 21<br>Adresse service RUE DU MAROC Candiac J5R5W9")
-            .openPopup();
-
-        // Ajout du switcher pour changer de carte
-        L.control.layers(basemaps).addTo(map);
-
-    </script>
-
-
-
-   <!-- Footer -->
-<footer class=" bg-gray-800">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="flex justify-center text-teal-600 text-teal-300">
-            <h2 class="text-2xl text-neutral-50 font-semibold">canada-credit</h2>
-        </div>
-
-        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed  text-gray-300 font-semibold">
-            FINANCE PRÊT ET RAPIDE
-        </p>
-
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./home">
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./about">
-                    A propos
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./loan-hypo">
-                    Prêts hypothécaires-personnels
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./investment">
-                    Investissements
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./contact">
-                    Faire une demande
-                </a>
-            </li>
-        </ul>
-
-        <div class="mt-10 max-w-6xl  flex flex-col md:flex justify-center gap-6 md:gap-8">
-            <div
-                class="flex justify-center list-none mx-auto max-sm:text-center space-x-5 max-md:flex-col items-center order-first md:order-none">
+            <form id="amortization-form" class="space-y-4">
                 <div>
-                    <span class="font-semibold text-green-400">Noms :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 9491-3282 QUÉBEC INC.</span>
+                    <label for="loan-amount" class="block text-sm font-semibold text-gray-900 mb-2">Montant de l'emprunt</label>
+                    <div class="flex flex-col md:flex-row md:space-x-2 space-y-2 md:space-y-0">
+                        <input type="number" placeholder="Exemple: 100000" id="loan-amount" required
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <select id="currency"
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="euro">Euro</option>
+                            <option value="cad">Dollar Canadien</option>
+                            <option value="usd">Dollar Américain</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="">
-                    <span class="font-semibold  text-green-400">Numéro Permis d'autorisation :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 17382-2 21</span>
+
+                <div>
+                    <label for="loan-term" class="block text-sm font-semibold text-gray-900 mb-2">Durée de remboursement</label>
+                    <div class="flex flex-col md:flex-row md:space-x-2 space-y-2 md:space-y-0">
+                        <input type="number" placeholder="Exemple: 12" id="loan-term" required
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <select id="term-unit"
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="mois">Mois</option>
+                            <option value="annee">Années</option>
+                        </select>
+                    </div>
                 </div>
-                <div class=" ">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                    <span class="font-semibold text-green-400">Adresse service :</span>
-                    <span class="text-neutral-50 text-sm w-full"> RUE DU MAROC Candiac J5R5W9</span>
+
+                <div>
+                    <label for="interest-rate" class="block text-sm font-semibold text-gray-900 mb-2">Taux nominal annuel (%)</label>
+                    <select id="interest-rate" required
+                        class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <option value="3">3%</option>
+                        <option value="4">4%</option>
+                        <option value="5">5%</option>
+                        <option value="6">6%</option>
+                        <option value="7">7%</option>
+                    </select>
                 </div>
-            </div>
-                  <!-- Legal Section -->
-            <div class="my-2 text-center text-gray-300">
-                <p class="text-sm mb-2">
-                    <!--<a href="./legal" class="text-green-400 hover:text-green-500">Mentions légales</a> | -->
-                    <a href="./privacy-policy" class="text-green-400 hover:text-green-500">Politique de confidentialité</a> | 
-                    <!--<a href="./general-terms" class="text-green-400 hover:text-green-500">Conditions générales de prêt</a> | -->
-                    <a href="./acessibility" class="text-green-400 hover:text-green-500">Accessibilité</a> | 
-                    <a href="./terms-of-use" class="text-green-400 hover:text-green-500">Conditions générales d'utilisation</a>
-                </p>
-            </div>
-            
-            <div class="flex max-md:mx-auto space-x-4 justify-center items-center md:flex-row">
-                <div
-                    class="card bg-blue-600 hover:bg-blue-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-white size-8 justify-center h-fit w-fit flex items-center"></i>
-                    </a>
+
+                <div>
+                    <label for="start-year" class="block text-sm font-semibold text-gray-900 mb-2">Date de départ (1ère échéance)</label>
+                    <div class="flex flex-col md:flex-row md:space-x-2 space-y-2 md:space-y-0">
+                        <input type="number" placeholder="Exemple: 2025" id="start-year" required
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            value="2024">
+                        <select id="start-month"
+                            class="block w-full rounded-lg bg-gray-50 px-4 py-3 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="1">Jan</option>
+                            <option value="2">Fév</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Avr</option>
+                            <option value="5">Mai</option>
+                            <option value="6">Juin</option>
+                            <option value="7">Juil</option>
+                            <option value="8">Août</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Déc</option>
+                        </select>
+                    </div>
                 </div>
-                <div
-                    class="card bg-gray-600 hover:bg-gray-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Phone</span>
-                        <i class="fas fa-phone size-8 justify-center h-fit w-fit flex text-white items-center"></i>
-                    </a>
+
+                <div>
+                    <button type="submit"
+                        class="btn-primary w-full text-lg py-3">
+                        Calculer
+                        <i class="fas fa-calculator ml-2"></i>
+                    </button>
                 </div>
-                <div
-                    class="card bg-green-600 hover:bg-green-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                        class="text-gray-200 justify-center flex  ">
-                        <span class="sr-only">WhatsApp</span>
-                        <i class="fab fa-whatsapp size-8 justify-center h-fit w-fit flex items-center text-white"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-red-600 hover:bg-red-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="mailto:info@canada-credit.fr" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Email</span>
-                        <i class="fas fa-envelope size-8 justify-center h-fit text-white w-fit flex items-center"></i>
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
-        <!-- copyright -->
-            <div class="my-5 text-center ">
-                <p class="text-sm text-gray-300">© 2025 canada-credit. Tous droits réservés.</p>
-                 <a class='text-sm text-green-400 mt-5 hover:text-yellow-500' href="https://wa.me/2290161151093">Bestdev</a>
+    </div>
+
+    <!-- Modal Tableau d'Amortissement -->
+    <div id="table-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 h-screen overflow-y-auto hidden">
+        <div id="table-modal-content" class="bg-white rounded-lg p-6 w-11/12 max-w-5xl max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-gray-300 pb-4 mb-4">
+                <h2 class="text-2xl font-bold text-gray-900">Tableau d'Amortissement</h2>
+                <button id="close-table-modal" class="text-white bg-red-500 px-3 py-1 rounded-lg hover:bg-red-600 cursor-pointer">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-    </div>
-    
-    </div>
-</footer>
 
+            <div class="mb-6 bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <p class="text-lg font-semibold mb-3">Paramètres du crédit:</p>
+                <div class="grid md:grid-cols-2 gap-2 text-sm">
+                    <p>Montant de l'emprunt: <span class="font-semibold" id="loan-amount-display">0</span> <span class="font-semibold" id="currency-display"></span></p>
+                    <p>Durée de remboursement: <span class="font-semibold" id="loan-term-display">0</span> <span class="font-semibold" id="term-unit-display">mois</span></p>
+                    <p>Taux annuel du crédit: <span class="font-semibold" id="interest-rate-display">0</span>%</p>
+                    <p>Début du crédit de remboursement: <span class="font-semibold" id="start-date-display"></span></p>
+                    <p class="md:col-span-2">Mensualité du crédit de remboursement: <span class="font-semibold text-blue-600 text-lg" id="monthly-payment-display">0</span> <span class="font-semibold" id="currency-display-2"></span></p>
+                </div>
 
-        <button id="scrollToTop" class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-lg p-4 px-5 shadow-xl hover:bg-blue-500 transition-colors duration-300" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+                <div class="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                    <p class="text-blue-800 text-sm">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        Si vous êtes d'accord, veuillez taper sur <span class="font-semibold">Valider la demande</span>
+                    </p>
+                </div>
+
+                <div class="mt-4 bg-white rounded-lg border border-gray-200 p-4">
+                    <div id="totals" class="text-sm font-semibold text-gray-800">
+                        <p class="text-lg mb-2">Total des mensualités: <span id="total-payments" class="font-bold text-green-600">0</span> <span id="currency-display-3"></span></p>
+                        <p class="text-lg">Total des intérêts: <span id="total-interest" class="font-bold text-red-600">0</span> <span id="currency-display-4"></span></p>
+
+                        <button id="purchase-demand"
+                            class="mt-4 w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                            <a href="https://forms.gle/VdtcErm7sKxotZf18" target="_blank" class="flex items-center justify-center">
+                                Valider la demande
+                                <i class="fas fa-check-circle ml-2"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 p-4 overflow-x-auto">
+                <h3 class="text-lg font-semibold mb-3">Tableau d'amortissement détaillé</h3>
+                <div id="amortization-table">
+                    <!-- Le tableau sera généré ici par JavaScript -->
+                </div>
+            </div>
+
+            <button id="download-pdf"
+                class="mt-6 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                Télécharger en PDF
+                <i class="fas fa-download ml-2"></i>
+            </button>
+        </div>
+    </div>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top
         const scrollToTopButton = document.getElementById('scrollToTop');
 
         window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'flex';
             } else {
                 scrollToTopButton.style.display = 'none';
             }
@@ -619,7 +703,250 @@
                 behavior: 'smooth'
             });
         });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Modal Controls
+        const openAmortizationModal = document.getElementById('open-modal-amortization');
+        const infoModal = document.getElementById('info-modal');
+        const closeInfoModal = document.getElementById('close-info-modal');
+        const tableModal = document.getElementById('table-modal');
+        const closeTableModal = document.getElementById('close-table-modal');
+        const choiceContact = document.getElementById('choice-contact');
+        const contactFormModal = document.getElementById('contact-form-via-choice');
+        const closeContactModal = document.getElementById('close-modal');
+
+        // Ouvrir modal calculateur
+        openAmortizationModal.addEventListener('click', () => {
+            infoModal.classList.remove('hidden');
+        });
+
+        // Fermer modal calculateur
+        closeInfoModal.addEventListener('click', () => {
+            infoModal.classList.add('hidden');
+        });
+
+        // Fermer modal tableau
+        closeTableModal.addEventListener('click', () => {
+            tableModal.classList.add('hidden');
+        });
+
+        // Ouvrir modal email
+        choiceContact.addEventListener('click', () => {
+            contactFormModal.classList.remove('hidden');
+        });
+
+        // Fermer modal email
+        closeContactModal.addEventListener('click', () => {
+            contactFormModal.classList.add('hidden');
+        });
+
+        // Fermer modals en cliquant à l'extérieur
+        window.addEventListener('click', (event) => {
+            if (event.target === infoModal) {
+                infoModal.classList.add('hidden');
+            }
+            if (event.target === tableModal) {
+                tableModal.classList.add('hidden');
+            }
+            if (event.target === contactFormModal) {
+                contactFormModal.classList.add('hidden');
+            }
+        });
+
+        // Calculateur d'amortissement
+        const amortizationForm = document.getElementById('amortization-form');
+
+        amortizationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Récupération des valeurs
+            const loanAmount = parseFloat(document.getElementById('loan-amount').value);
+            const loanTerm = parseFloat(document.getElementById('loan-term').value);
+            const termUnit = document.getElementById('term-unit').value;
+            const interestRate = parseFloat(document.getElementById('interest-rate').value);
+            const currency = document.getElementById('currency').value;
+            const startYear = parseInt(document.getElementById('start-year').value);
+            const startMonth = parseInt(document.getElementById('start-month').value);
+
+            // Conversion en mois si nécessaire
+            const totalMonths = termUnit === 'annee' ? loanTerm * 12 : loanTerm;
+
+            // Calcul de l'amortissement
+            const monthlyInterestRate = interestRate / 100 / 12;
+            const monthlyPayment = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths) /
+                                 (Math.pow(1 + monthlyInterestRate, totalMonths) - 1);
+
+            const totalPayment = monthlyPayment * totalMonths;
+            const totalInterest = totalPayment - loanAmount;
+
+            // Affichage des résultats dans le modal
+            document.getElementById('loan-amount-display').textContent = loanAmount.toLocaleString();
+            document.getElementById('currency-display').textContent = getCurrencySymbol(currency);
+            document.getElementById('currency-display-2').textContent = getCurrencySymbol(currency);
+            document.getElementById('currency-display-3').textContent = getCurrencySymbol(currency);
+            document.getElementById('currency-display-4').textContent = getCurrencySymbol(currency);
+            document.getElementById('loan-term-display').textContent = loanTerm;
+            document.getElementById('term-unit-display').textContent = termUnit;
+            document.getElementById('interest-rate-display').textContent = interestRate;
+            document.getElementById('monthly-payment-display').textContent = monthlyPayment.toFixed(2);
+            document.getElementById('total-payments').textContent = totalPayment.toFixed(2);
+            document.getElementById('total-interest').textContent = totalInterest.toFixed(2);
+
+            // Date de début
+            const monthNames = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+            document.getElementById('start-date-display').textContent = `${monthNames[startMonth-1]} ${startYear}`;
+
+            // Génération du tableau d'amortissement
+            generateAmortizationTable(loanAmount, monthlyPayment, monthlyInterestRate, totalMonths, startYear, startMonth, currency);
+
+            // Fermer le modal calculateur et ouvrir le modal tableau
+            infoModal.classList.add('hidden');
+            tableModal.classList.remove('hidden');
+        });
+
+        function getCurrencySymbol(currency) {
+            switch(currency) {
+                case 'euro': return '€';
+                case 'cad': return '$CAD';
+                case 'usd': return '$USD';
+                default: return '€';
+            }
+        }
+
+        function generateAmortizationTable(loanAmount, monthlyPayment, monthlyInterestRate, totalMonths, startYear, startMonth, currency) {
+            const tableContainer = document.getElementById('amortization-table');
+            let remainingBalance = loanAmount;
+            let html = `
+                <table class="amortization-table">
+                    <thead>
+                        <tr>
+                            <th>Période</th>
+                            <th>Date</th>
+                            <th>Mensualité</th>
+                            <th>Intérêts</th>
+                            <th>Capital</th>
+                            <th>Solde restant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            const currencySymbol = getCurrencySymbol(currency);
+            let currentYear = startYear;
+            let currentMonth = startMonth - 1; // Ajustement pour l'index 0-based
+
+            for (let i = 1; i <= totalMonths; i++) {
+                // Gestion des mois et années
+                currentMonth++;
+                if (currentMonth > 12) {
+                    currentMonth = 1;
+                    currentYear++;
+                }
+
+                const interest = remainingBalance * monthlyInterestRate;
+                const principal = monthlyPayment - interest;
+                remainingBalance -= principal;
+
+                // Pour la dernière période, ajuster pour éviter les décimales négatives
+                if (i === totalMonths) {
+                    remainingBalance = 0;
+                }
+
+                const monthNames = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];
+
+                html += `
+                    <tr>
+                        <td>${i}</td>
+                        <td>${monthNames[currentMonth-1]} ${currentYear}</td>
+                        <td>${monthlyPayment.toFixed(2)} ${currencySymbol}</td>
+                        <td>${interest.toFixed(2)} ${currencySymbol}</td>
+                        <td>${principal.toFixed(2)} ${currencySymbol}</td>
+                        <td>${remainingBalance > 0 ? remainingBalance.toFixed(2) : '0.00'} ${currencySymbol}</td>
+                    </tr>
+                `;
+            }
+
+            html += `
+                    </tbody>
+                </table>
+            `;
+
+            tableContainer.innerHTML = html;
+        }
+
+        // Téléchargement PDF
+        document.getElementById('download-pdf').addEventListener('click', () => {
+            // Implémentation basique - dans un cas réel, vous utiliseriez une bibliothèque comme jsPDF
+            alert('Fonctionnalité PDF à implémenter avec jsPDF');
+        });
+
+        // Validation du formulaire de contact
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            // Validation basique - vous pouvez ajouter plus de validations ici
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!firstName || !lastName || !email || !message) {
+                e.preventDefault();
+                alert('Veuillez remplir tous les champs obligatoires.');
+            }
+        });
+
+        // Map initialization
+        function initMap() {
+            const map = L.map('map').setView([45.3842, -73.5159], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+
+            L.marker([45.3842, -73.5159]).addTo(map)
+                .bindPopup("Canada-Credit<br>RUE DU MAROC Candiac J5R5W9")
+                .openPopup();
+        }
+
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in the form
+            const currentYear = new Date().getFullYear();
+            document.getElementById('start-year').value = currentYear;
+
+            // Load Leaflet CSS and JS dynamically if needed
+            if (typeof L === 'undefined') {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+                document.head.appendChild(link);
+
+                const script = document.createElement('script');
+                script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+                script.onload = initMap;
+                document.head.appendChild(script);
+            } else {
+                initMap();
+            }
+        });
     </script>
 </body>
-
 </html>

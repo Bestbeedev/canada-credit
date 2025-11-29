@@ -4,365 +4,618 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Consultez les conditions générales d'utilisation de Canada-Credit. Découvrez vos droits, responsabilités et notre engagement envers la transparence." />
-  <meta name="author" content="Canada-Credit" />
-  <title>Conditions Générales d'Utilisation | Canada-Credit</title>
-  <link rel="canonical" href="https://canada-credit.fr/terms-of-use" />
-
-
+    <meta name="description" content="Consultez les conditions générales d'utilisation de Canada-Credit. Découvrez vos droits, responsabilités et notre engagement envers la transparence." />
+    <meta name="author" content="Canada-Credit" />
+    <title>Conditions Générales d'Utilisation | Canada-Credit</title>
+    <link rel="canonical" href="https://canada-credit.fr/terms-of-use" />
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KQSCGS83');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+        'gtm.start': new Date().getTime(),event:'gtm.js'
+        });var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
 
     <!-- Meta for Socials Medias -->
     <meta property="og:title" content="Conditions Générales d'Utilisation | Canada-Credit" />
     <meta property="og:description" content="Découvrez les règles d'utilisation de Canada-Credit, vos droits et nos engagements en matière de transparence et de protection des utilisateurs." />
-   <meta property="og:url" content="https://www.canada-credit.com/conditions-utilisation" />
-   <meta property="og:type" content="website" />
-   <meta property="og:image" content="https://www.canada-credit.com/images/cgu.jpg" />
+    <meta property="og:url" content="https://www.canada-credit.com/conditions-utilisation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.canada-credit.com/images/cgu.jpg" />
 
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,300,400,500,700,900" rel="stylesheet" />
-    <script src="/script/main.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <!-- Script Google Translate -->
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr', autoDisplay: false },
-                'google_translate_element'
-            );
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #06d6a0;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-    </script>
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sora', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .legal-content {
+            max-width: 6xl;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+        }
+
+        .legal-section h3 {
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .legal-list {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .legal-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary);
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 40;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="bg-white">
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Header -->
-    <header class="sticky bg-neutral-50 shadow-lg inset-x-0 top-0 z-50">
-        <nav class="flex items-center items-center justify-between py-3 px-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="./home" class="-m-1.5 p-1.5">
-                    <span class="sr-only">canada-credit</span>
-                    <h1 class="text-2xl text-indigo-600 max-sm:text-lg  font-semibold">canada-credit</h1>
-                </a>
-            </div>
-            <div class="flex space-x-3 lg:hidden">
-                <div class="mx-4">
-                    <select id="language-select-1"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
                 </div>
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center cursor-pointer  text-neutral-600 justify-center rounded-md p-2.5 text-gray-700"
-                    id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars text-neutral-600"></i>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
+                    <a href="./investment" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
+                    <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
+                    <a href="./contact" class="btn-primary text-sm xl:text-base">Faire une Demande</a>
+
+                    <!-- Language Selector -->
+                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="nl">🇳🇱 NL</option>
+                    </select>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-700 text-lg"></i>
                 </button>
             </div>
-            <div class="hidden lg:flex items-center  lg:gap-x-12">
-                <a href="./home" class="text-sm/6 font-semibold  nav-link text-gray-900">Accueil</a>
-                <a href="./loan-hypo" class="text-sm/6 nav-link font-semibold text-gray-900">Prêts
-                    hypothécaires-personnels</a>
-                <a href="./investment" class="text-sm/6 nav-link font-semibold text-gray-900">Investissements</a>
-                <a href="./about" class="text-sm/6  nav-link font-semibold text-gray-900">À propos</a>
-                <a href="./contact" class="text-sm/6 nav-link font-semibold text-gray-900">Faire une demande</a>
-                <div class="mx-4">
-                    <select id="language-select"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
-                </div>
-            </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden  hidden" role="dialog" aria-modal="true" id="mobile-menu">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="./home" class="-m-1.5 p-1.5">
-                        <span class="sr-only">canada-credit</span>
-                        <h1 class="text-xl text-indigo-600 font-semibold">canada-credit</h1>
+        </div>
 
-                    </a>
-                    <button type="button"
-                        class="-m-2.5 bg-neutral-200 cursor-pointer  border-neutral-400  rounded-md p-2 px-4 text-gray-700 text-neutral-600"
-                        id="close-mobile-menu">
-                        <span class="sr-only">Close menu</span>
-                        <i class="fas fa-times text-neutral-600"></i>
-                    </button>
-                </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6"></div>
-                        <a href="./home"
-                            class="-mx-3 block  nav-link-mobile  rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-                        <a href="./about"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">À
-                            propos</a>
-                        <a href="/loan-hypo"
-                            class="-mx-3 block  nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prêts
-                            hypothécaires-personnels</a>
-                        <a href="./investment"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Investissements</a>
-                        <a href="/contact"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Faire
-                            une demande</a>
-                    </div>
-                </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-6 space-y-4">
+                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
+                <a href="./investment" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Investissements</a>
+                <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
+                <a href="./contact" class="block py-4 text-center btn-primary w-full">Faire une Demande</a>
+
+                <!-- Mobile Language Selector -->
+                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
             </div>
         </div>
     </header>
 
-    <main class="flex flex-col items-center justify-center max-sm:px-6 min-h-screen bg-white p-6">
-        <div class=" bg-neutral-50 p-10 rounded-xl shadow-md">
-            <h2 class="text-3xl font-semibold tracking-tight text-gray-900">Conditions générales d’utilisation du site</h2>
-            <p class="mt-4 text-lg text-gray-700">Ces conditions générales ont été mises à jour pour la dernière fois le 16 août 2023.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Acceptation des conditions générales d’utilisation du site</h3>
-            <p class="mt-4 text-lg text-gray-700">Les présentes conditions d’utilisation du site Web <a href="https://www.canada-credit.fr/">https://www.canada-credit.fr/</a> (le « site Web » ou le présent « site ») constituent une entente légale et sont conclues par et entre vous et Canada-Credit (« Société », « nous », « notre »). Les termes et conditions suivants (les « Conditions générales »), régissent votre accès et votre utilisation, y compris tout contenu, fonctionnalité, produits et services offerts sur ou via le site Web (les « Services »).</p>
-            <p class="mt-4 text-lg text-gray-700">En utilisant le site Web ou en cliquant pour accepter les modalités, vous acceptez d’être lié et de vous conformer à ces modalités et à notre déclaration de confidentialité, qui se trouve à <a href="https://www.canada-credit.fr/privacy-statement/">https://www.canada-credit.fr/privacy-statement/</a>, incorporée aux présentes par référence. Si vous n’acceptez pas ces termes et conditions ou la déclaration de confidentialité, vous ne devez pas accéder ou utiliser le site Web. En utilisant ce site Web, vous déclarez et garantissez que vous répondez à toutes les conditions d’éligibilité ci-dessus.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Modifications des conditions générales et du site web</h3>
-            <p class="mt-4 text-lg text-gray-700">Nous nous réservons le droit, à notre seule discrétion, de réviser et de mettre à jour ces termes et conditions de temps à autre. Toutes ces modifications entrent en vigueur dès leur publication et s’appliquent à tout accès et utilisation continue du site Web. Vous acceptez de consulter périodiquement les termes et conditions afin d’être au courant de ces modifications et votre utilisation continue sera votre acceptation de celles-ci. L’information et le matériel sur ce site Web, et le site Web peuvent être modifiés, retirés ou résiliés à tout moment à notre seule discrétion sans préavis. Nous ne serons pas responsables si, pour quelque raison que ce soit, tout ou partie du site Web est réservé aux utilisateurs ou indisponible à tout moment ou pour quelque période que ce soit.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Votre utilisation du site web et configuration et sécurité du compte</h3>
-            <p class="mt-4 text-lg text-gray-700">Les utilisateurs sont responsables d’obtenir leur propre accès au site Web et de la disponibilité et de la performance du site Web. Les utilisateurs sont tenus de s’assurer que toutes les personnes qui accèdent au site Web par le biais de la connexion Internet d’un utilisateur connaissent les présentes conditions générales et s’y conforment. Les utilisateurs sont responsables de toute atteinte à la sécurité ou problème de performance lié à l’accès au site Web.</p>
-            <p class="mt-4 text-lg text-gray-700">Le site Web, y compris le contenu ou les zones du site Web peuvent nécessiter l’enregistrement de l’utilisateur. L’utilisation du site Web est conditionnée par le fait que tous les renseignements que vous fournissez sur le site Web sont corrects, à jour et complets. Vos renseignements d’inscription fournis et toute soumission que vous faites au site Web par le biais de toute fonctionnalité telle que le chat en direct, le courriel, le portail client, les profils et d’autres fonctions de ce genre (collectivement, les « fonctions interactives ») constituent votre consentement à toutes les mesures que nous prenons à l’égard de ces renseignements conformément à notre Déclaration de confidentialité <a href="https://www.canada-credit.fr/privacy-statement/">https://www.canada-credit.fr/privacy-statement/</a>.</p>
-            <p class="mt-4 text-lg text-gray-700">Tout nom d’utilisateur, mot de passe ou tout autre élément d’information choisi par vous ou qui vous a été fourni dans le cadre de nos procédures de sécurité doit être traité comme confidentiel et vous ne devez pas le divulguer à une autre personne ou entité. Vous comprenez et acceptez que si un compte vous est fourni, votre compte vous est personnel et vous acceptez de ne fournir à aucune autre personne l’accès à ce site Web ou à des parties de celui-ci en utilisant votre nom d’utilisateur, votre mot de passe ou d’autres renseignements de sécurité. Vous acceptez de nous informer immédiatement de tout accès ou utilisation non autorisé de votre nom d’utilisateur ou mot de passe ou de toute autre violation de la sécurité. Vous êtes responsable de toute utilisation abusive du mot de passe ou de tout accès non autorisé.</p>
-            <p class="mt-4 text-lg text-gray-700">Nous nous réservons le droit, à tout moment et de temps à autre, de désactiver ou de résilier votre compte, tout nom d’utilisateur, mot de passe ou autre identifiant, qu’il soit choisi par vous ou fourni par nous, à notre seule discrétion pour quelque raison que ce soit, y compris toute violation de toute disposition des présentes Conditions générales.</p>
-            <p class="mt-4 text-lg text-gray-700">Il vous est interdit de tenter de contourner et de violer la sécurité de ce site Web, y compris, sans s’y limiter :</p>
-            <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
-                <li>accéder au contenu et aux données qui ne vous sont pas destinés;</li>
-                <li>tenter de violer ou de violer les mesures de sécurité et/ou d’authentification qui ne sont pas autorisées;</li>
-                <li>restreindre la perturbation ou la désactivation du service aux utilisateurs, hôtes, serveurs ou réseaux;</li>
-                <li>perturber les services réseau et autrement perturber la capacité du propriétaire du site Web à surveiller le site Web;</li>
-                <li>utiliser tout robot, araignée ou autre dispositif, processus ou moyen automatique pour accéder au site Web à quelque fin que ce soit, y compris surveiller ou copier tout le matériel sur le site Web;</li>
-                <li>introduire tout virus, cheval de Troie, vers, bombe logique ou autre matériel malveillant ou technologiquement nuisible;</li>
-                <li>attaquer le site Web via une attaque par déni de service, une attaque par déni de service distribué, une inondation, un bombardement postal ou une panne; et</li>
-                <li>autrement tenter d’entraver le bon fonctionnement du site Web.</li>
-            </ul>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Droits de propriété intellectuelle et propriété</h3>
-            <p class="mt-4 text-lg text-gray-700">Vous comprenez et acceptez que le site Web et l’ensemble de son contenu, de ses caractéristiques et de ses fonctionnalités, y compris, mais sans s’y limiter, tous les renseignements, logiciels, codes, textes, affichages, graphiques, photographies, vidéos, audio, conception, présentation, sélection et arrangement, appartiennent à la Société, à ses concédants de licence ou à d’autres fournisseurs de ce matériel et sont protégés sous toutes formes par les lois sur la propriété intellectuelle, y compris, sans s’y limiter, les droits d’auteur, les marques de commerce, les brevets, les secrets commerciaux et tout autre droit de propriété.</p>
-            <p class="mt-4 text-lg text-gray-700">Le nom de la Société (« Canada-Credit » et mots connexes), le logo de la Société et tous les noms, logos, noms de produits et de services, dessins, images et slogans connexes sont des marques de commerce de la Société ou de ses sociétés affiliées ou concédants de licence. Vous ne devez pas utiliser ces marques sans l’autorisation écrite préalable de la Société. Les autres noms, logos, noms de produits et services, dessins, images et slogans mentionnés, ou qui apparaissent sur ce site Web sont les marques de commerce de leurs propriétaires respectifs. L’utilisation d’un tel bien, sauf autorisation expresse, constitue une violation des droits du propriétaire du bien et peut être une violation des lois fédérales ou autres et pourrait exposer le contrevenant à des poursuites judiciaires.</p>
-            <p class="mt-4 text-lg text-gray-700">Vous ne pouvez utiliser le Site Web et/ou les Services que pour votre usage personnel et non commercial. Les utilisateurs ne sont pas autorisés à modifier des copies de tout matériel de ce site Web ni à supprimer ou à modifier tout avis de droit d’auteur, de marque déposée ou d’autres droits de propriété à partir de copies de matériel de ce site Web. Vous ne devez pas accéder ou utiliser à des fins commerciales toute partie du site Web ou tout service ou matériel disponible sur le site Web. Si vous imprimez, copiez ou téléchargez une partie de notre site en violation des présentes conditions générales, votre droit d’utiliser notre site Web et / ou les services cessera immédiatement et vous devez, à notre choix, retourner ou détruire toute copie du matériel que vous avez fait. Vous n’avez aucun droit, titre ou intérêt sur le site Web ou sur tout contenu du site Web, et tous les droits non expressément accordés sont réservés par la Société. Toute utilisation du Site et/ou des Services non expressément autorisée par les présentes Conditions Générales constitue une violation des présentes Conditions Générales et peut violer le droit d’auteur, les marques et autres lois sur la propriété intellectuelle.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Conditions d’utilisation et soumissions d’utilisateurs et normes de contenu du site</h3>
-            <p class="mt-4 text-lg text-gray-700">Comme condition de votre accès et utilisation, vous acceptez que vous puissiez utiliser le site Web et les services uniquement à des fins légales et conformément aux présentes conditions générales. Les normes de contenu suivantes s’appliquent à tout contenu, matériel et information qu’un utilisateur soumet, publie, affiche ou transmet (collectivement, « soumettre ») au site Web, à d’autres utilisateurs ou à d’autres personnes (collectivement, « Soumissions de l’utilisateur ») et à toute fonction interactive. Toutes les soumissions d’utilisateurs doivent être conformes à toutes les lois et réglementations fédérales, provinciales, locales et internationales applicables.</p>
-            <p class="mt-4 text-lg text-gray-700">Sans limiter ce qui précède, vous garantissez et acceptez que votre utilisation du site Web, des services et de toute soumission utilisateur ne doit pas:</p>
-            <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
-                <li>Enfreindre de quelque façon que ce soit les lois ou règlements fédéraux, provinciaux, locaux ou internationaux applicables, y compris, sans s’y limiter, les lois concernant l’exportation de données ou de logiciels, les brevets, les marques de commerce, les secrets commerciaux, les droits d’auteur ou toute autre propriété intellectuelle, les droits légaux (y compris les droits de publicité et de protection de la vie privée d’autrui) ou contenir du matériel qui pourrait donner lieu à une responsabilité civile ou criminelle en vertu des lois ou règlements applicables ou qui pourrait autrement être en conflit avec les présentes modalités et notre déclaration de confidentialité <a href="https://www.canada-credit.fr/privacy-statement/">https://www.canada-credit.fr/privacy-statement/</a>;</li>
-                <li>Inclure ou contenir du matériel qui est exploiteur, obscène, nuisible, menaçant, abusif, harcelant, haineux, diffamatoire, sexuellement explicite ou pornographique, violent, incendiaire ou discriminatoire fondé sur la race, le sexe, la religion, la nationalité, un handicap, l’orientation sexuelle, ou l’âge ou tout autre motif interdit ou être autrement répréhensible;</li>
-                <li>Impliquer, fournir ou fournir toute information fausse, inexacte ou trompeuse;</li>
-                <li>usurper ou tenter d’usurper l’identité de la Société, d’un employé de la Société, d’un autre utilisateur ou de toute autre personne ou entité (y compris, sans s’y limiter, en utilisant des adresses de courriell ou des noms d’écran associés à l’un des éléments précédents);</li>
-                <li>Transmettre ou obtenir l’envoi de toute publicité ou promotion sans notre consentement écrit préalable, activités commerciales ou ventes, y compris, sans s’y limiter, tout « pourriel », « courrier indésirable », « chaîne de lettres », concours, loterie et autres promotions de vente, troc ou publicité ou toute autre sollicitation similaire ;</li>
-                <li>Inclure l’adoption de toute autre conduite qui restreint ou empêche quiconque d’utiliser ou de profiter du site Web, ou qui, tel que déterminé par nous, peut nuire à la Société ou aux utilisateurs du site Web ou les exposer à une responsabilité;</li>
-                <li>Inclure causer de la gêne, des inconvénients ou de l’anxiété inutile ou être susceptible de contrarier, d’embarrasser ou d’alarmer toute autre personne;</li>
-                <li>Promouvoir toute activité illégale, ou prôner, promouvoir ou aider tout acte illégal;</li>
-                <li>Donner l’impression qu’ils proviennent de nous ou de toute autre personne ou entité ou qu’ils sont approuvés par nous si ce n’est pas le cas.</li>
-            </ul>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Frais</h3>
-            <p class="mt-4 text-lg text-gray-700">Tous les frais que vous devrez payer pour l’utilisation du site Web et/ou des services qu’il fournit seront conformes au barème des frais et tarifs publiés de temps à autre par nous sur notre site Web ou autrement par écrit pour vous, à l’exception des erreurs et omissions, et seront dus et payables conformément aux termes de notre contrat de services à la clientèle. Vous acceptez que, sauf indication contraire de la Société, ces frais ne soient remboursables sur aucune base. Nous nous réservons le droit de modifier les prix, y compris de cesser d’offrir des éléments des Services. La Société vous informera par écrit si le prix d’un service doit être modifié.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Surveillance  et application du site, suspension et résiliation</h3>
-            <p class="mt-4 text-lg text-gray-700">La Société a le droit, sans préavis :</p>
-            <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
-                <li>Retirer ou refuser d’afficher sur le site Web des soumissions d’utilisateurs pour une raison quelconque ou sans raison à notre seule discrétion;</li>
-                <li>À tout moment, pour prendre de telles mesures à l’égard de toute soumission d’utilisateur jugée nécessaire ou appropriée à notre seule discrétion, y compris, sans s’y limiter, pour violer le site Web et les soumissions d’utilisateur et les normes ou conditions de contenu du site;</li>
-                <li>Prendre les mesures juridiques appropriées, y compris, sans limitation, le renvoi à l’application de la loi, l’autorité réglementaire ou la partie lésée pour toute utilisation illégale ou non autorisée du site Web et / ou des services. Sans limiter ce qui précède, nous avons le droit de coopérer pleinement avec les autorités policières ou toute ordonnance judiciaire nous demandant ou nous enjoignant de divulguer l’identité ou d’autres renseignements de toute personne publiant des documents sur ou via le site Web; et</li>
-                <li>Résilier ou suspendre votre accès à tout ou partie du site Web pour quelque raison que ce soit, y compris sans limitation, toute violation des présentes conditions générales.</li>
-            </ul>
-            <p class="mt-4 text-lg text-gray-700">Vous renoncez et dégagez la Société et ses sociétés affiliées, licenciés et fournisseurs de services de toute réclamation résultant de toute mesure prise par la Société et l’une des parties précédentes relative à une enquête menée par la Société ou ces parties ou par les autorités chargées de l’application de la loi.</p>
-            <p class="mt-4 text-lg text-gray-700">Nous n’avons aucune obligation, ni aucune responsabilité envers aucune partie de surveiller le site Web ou son utilisation, et nous ne pouvons pas et ne pouvons pas nous engager à examiner le matériel que vous ou d’autres utilisateurs soumettez au site Web. Nous ne pouvons pas assurer le retrait rapide du matériel répréhensible après sa publication et nous n’avons aucune responsabilité pour toute action ou inaction concernant les transmissions, les communications ou le contenu fourni par un utilisateur ou un tiers.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Pas de recours</h3>
-            <p class="mt-4 text-lg text-gray-700">Le contenu de notre site Web est fourni à titre d’information générale seulement. Il ne s’agit pas d’un conseil sur lequel vous devriez vous fier. Vous devez obtenir des conseils plus spécifiques ou professionnels avant de prendre, ou de vous abstenir de prendre, toute mesure ou inaction sur la base du contenu de notre site. Bien que nous fassions des efforts raisonnables pour mettre à jour les renseignements sur notre site Web, nous ne faisons aucune déclaration, garantie ou garantie, expresse ou implicite, que le contenu de notre site Web est exact, complet ou à jour. Votre utilisation du Site Web et des Services se fait à vos propres risques et la Société n’assume aucune responsabilité quant à votre utilisation de ce Site Web et des Services.</p>
-            <p class="mt-4 text-lg text-gray-700">Ce site Web peut inclure du contenu fourni par des tiers, y compris par d’autres utilisateurs et des concédants de licence tiers. Toutes les déclarations et/ou opinions exprimées dans un tel contenu tiers, autre que le contenu fourni par la Société, sont uniquement les opinions et la responsabilité de la personne ou de l’entité qui fournit ce matériel. Ces documents ne reflètent pas nécessairement l’opinion de la Société. La Société n’est pas responsable, ni responsable envers vous ou un tiers, du contenu ou de l’exactitude des documents de tiers.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Sites Web tiers</h3>
-            <p class="mt-4 text-lg text-gray-700">Pour votre commodité, ce site Web peut fournir des liens ou des pointeurs vers des sites tiers. Nous ne faisons aucune déclaration au sujet des autres sites Web qui peuvent être consultés à partir de ce site Web. Si vous choisissez d’accéder à ces sites, vous le faites à vos risques et périls. Nous n’avons aucun contrôle sur le contenu de ces sites tiers, et déclinons toute responsabilité pour ces sites ou pour toute perte ou dommage pouvant découler de votre utilisation de ces sites. Vous êtes soumis aux termes et conditions de ces sites tiers.</p>
-            <p class="mt-4 text-lg text-gray-700">L’apparition d’un lien sur le site Web de la Société ne constitue pas une approbation, une recommandation ou une certification de la Société, et la présence d’un lien ne doit en aucune façon être interprétée comme une suggestion que le site a une relation avec la Société.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Restrictions géographiques</h3>
-            <p class="mt-4 text-lg text-gray-700">Le propriétaire du site Web est basé dans la province de l’Ontario au Canada. Ce site n’est pas destiné à être utilisé dans une juridiction où son utilisation est interdite. Si vous accédez au site depuis l’extérieur du Canada, vous le faites à vos propres risques et vous êtes responsable de la conformité aux lois locales de votre juridiction.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Exclusion des garanties</h3>
-            <p class="mt-4 text-lg text-gray-700">Vous comprenez et acceptez que votre utilisation du site Web, de son contenu et des services, produits ou éléments trouvés ou obtenus par le biais du site Web se fait à vos propres risques. Le site Web, son contenu et tous les services ou éléments trouvés ou obtenus par l’intermédiaire du site Web sont fournis « tels quels » et « tels que disponibles », sans aucune garantie d’aucune sorte, expresse ou implicite, y compris, mais sans s’y limiter, les garanties implicites de qualité marchande, d’adéquation à un usage particulier ou de non-violation. Ce qui précède n’affecte aucune garantie qui ne peut être exclue ou limitée en vertu du droit applicable.</p>
-            <p class="mt-4 text-lg text-gray-700">Ni la Société, ni aucune société affiliée, ni ses directeurs, dirigeants, employés, agents ou fournisseurs de services respectifs ne donnent aucune garantie, déclaration ou approbation quant à l’exhaustivité, la sécurité, la fiabilité, la convenance, l’exactitude, l’actualité ou la disponibilité du site Web ou de son contenu. Sans limiter ce qui précède, ni la Société, ni aucune société affiliée, ni leurs administrateurs, dirigeants, employés, agents ou fournisseurs de services respectifs ne déclarent ou ne garantissent que le site Web, son contenu ou l’un des services ou éléments trouvés ou atteints via le site Web sera exact, fiable, sans erreur ou ininterrompu, que les défauts seront corrigés, que notre site ou le serveur qui le rend disponible sont exempts de virus ou autres composants nocifs.</p>
-            <p class="mt-4 text-lg text-gray-700">Nous ne pouvons et ne garantissons pas que les fichiers ou données disponibles pour téléchargement à partir d’Internet ou du site web seront exempts de virus ou autre code destructeur. Vous êtes seul et entièrement responsable de votre utilisation du site et/ou des services, et de la sécurité de votre ordinateur, d’Internet et des données.</p>
-            <p class="mt-4 text-lg text-gray-700">Dans toute la mesure prévue par la loi, nous ne serons pas responsables des pertes ou des dommages causés par une attaque par déni de service, une attaque distribuée par déni de service, une surcharge, une inondation, un bombardement postal ou une panne, des virus, des chevaux de Troie, des vers, des bombes logiques ou tout autre matériel technologiquement nocif qui pourrait infecter votre équipement informatique, des programmes informatiques, des données ou tout autre matériel propriétaire en raison de votre utilisation du site Web ou de l’un des services ou éléments trouvés ou obtenus via le site Web ou de votre téléchargement de tout matériel affiché sur celui-ci, ou sur tout site Web qui y est lié.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Limitation de responsabilité</h3>
-            <p class="mt-4 text-lg text-gray-700">En aucun cas, la Société, ses sociétés affiliées et leurs directeurs, dirigeants, employés, agents ou fournisseurs de services respectifs ne seront responsables de négligence, de négligence grave, de fausse déclaration négligente, de violation fondamentale, de dommages de quelque nature que ce soit, en vertu de toute théorie juridique, y compris les dommages directs, indirects, spéciaux, accessoires, consécutifs ou punitifs, y compris, mais sans s’y limiter, les dommages corporels, la douleur et les souffrances, la détresse émotionnelle, la perte de revenus, la perte de profits, la perte d’activité ou les économies anticipées, la perte d’utilisation, la perte de bonne volonté, la perte de données, et qu’ils soient causés par un délit (y compris la négligence), une rupture de contrat, une violation de la vie privée ou autrement, même si la partie aurait été informée ou avait des raisons de savoir, découlant de ou en relation avec votre utilisation, ou l’incapacité d’utiliser, de se fier au site Web et/ou aux services, à tout site Web lié ou à tout autre site Web tiers, ni au contenu du site, aux documents, à l’affichage ou à l’information ci-incluse.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Dédommagement</h3>
-            <p class="mt-4 text-lg text-gray-700">Dans la mesure maximale permise par la loi applicable, vous acceptez de défendre, d’indemniser et de protéger la Société, ses sociétés affiliées, et leurs administrateurs, responsables, employés, agents, prestataires de services, contractants, concédants, fournisseurs, successeurs et ayants droit respectifs contre toute réclamation, responsabilité, dommages, jugements, indemnités, pertes, coûts, dépenses ou honoraires (y compris les honoraires raisonnables d’avocat) découlant de ou relatifs à votre violation de ces Conditions Générales de Vente et d’Utilisation ou à votre utilisation du Site Web, y compris, mais sans s’y limiter, vos Soumissions d’Utilisateur, les sites de tiers, toute utilisation du contenu du Site Web, les Services et les produits autres que ceux expressément autorisés dans ces Conditions Générales de Vente et d’Utilisation.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Droit et juridiction applicables</h3>
-            <p class="mt-4 text-lg text-gray-700">Le site Web et les présentes modalités seront régis et interprétés conformément aux lois de la province de l’Ontario et aux lois fédérales du Canada qui y sont applicables, sans donner effet à aucune disposition, principe ou règle de choix ou de conflit de lois (qu’il s’agisse des lois de la province de l’Ontario ou de toute autre juridiction) et nonobstant votre domicile, votre résidence ou votre emplacement physique.</p>
-            <p class="mt-4 text-lg text-gray-700">Toute action ou procédure découlant de ou se rapportant à ce site Web et aux présentes modalités sera intentée devant les tribunaux de la province de l’Ontario et/ou la Cour fédérale du Canada, et chaque partie se soumet irrévocablement à la compétence exclusive de ces tribunaux dans une telle action ou procédure. Vous renoncez à toute objection à l’exercice de votre compétence par ces tribunaux et au lieu de ces tribunaux.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Lignes directrices des médias sociaux</h3>
-            <p class="mt-4 text-lg text-gray-700">Les Termes et Conditions de ce Site Web s’étendent à l’utilisation de toutes les pages de médias sociaux sur Facebook, Pinterest, Twitter, Instagram, LinkedIn, ou YouTube, ou publier des avis ou commentaires concernant votre utilisation du Service sur ces services de médias sociaux ou des sites Web tiers, nous vous demandons de suivre les directives suivantes:</p>
-            <p class="mt-4 text-lg text-gray-700">La Société se réserve le droit de supprimer, bloquer et/ou supprimer tout commentaire ou de résilier ou suspendre votre accès à tout ou partie des comptes de médias sociaux, pour quelque raison que ce soit, à sa seule discrétion;</p>
-            <p class="mt-4 text-lg text-gray-700">En utilisant toutes les pages de médias sociaux, vous vérifiez que tous les renseignements soumis sont exacts et factuels. Les commentaires négatifs et/ou les plaintes que vous publiez peuvent être interprétés comme des réclamations concernant la Société et peuvent faire l’objet de réclamations légales;</p>
-            <p class="mt-4 text-lg text-gray-700">Vous acceptez en outre de communiquer de façon privée avec la Société pour toute préoccupation ou suggestion avant et en remplacement de la publication publique.</p>
-            <h3 class="mt-6 text-2xl font-semibold text-gray-900">Généralités</h3>
-            <p class="mt-4 text-lg text-gray-700">Aucune renonciation en vertu des présentes conditions générales n’est effective à moins qu’elle ne soit écrite et signée par un représentant autorisé de la partie renonçant à son droit. Aucun manquement à l’exercice ou retard dans l’exercice d’un droit, recours, pouvoir ou privilège découlant des présentes conditions générales ne constitue, ou ne peut être interprété, comme une renonciation. Aucun exercice unique ou partiel d’un droit, d’un recours, d’un pouvoir ou d’un privilège en vertu des présentes n’empêche l’exercice d’un autre droit, d’un recours, d’un pouvoir ou d’un privilège. Si une clause ou une disposition des présentes Conditions générales est invalide, illégale ou inapplicable dans une juridiction, cette nullité, illégalité ou inapplicabilité n’affectera aucune autre clause ou disposition des présentes Conditions générales ou invalidera ou rendra inapplicable ladite clause ou disposition dans toute autre juridiction. Les modalités et notre déclaration de confidentialité constituent le seul et entier accord entre vous et Canada-Credit concernant le site Web et remplacent toutes les ententes, ententes, déclarations et garanties antérieures et contemporaines, écrites et orales, concernant ce sujet.</p>
-            <a href="./home" class="mt-6 inline-block rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500">Retour à l'accueil</a>
+    <!-- Hero Section -->
+    <section class="relative gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
+
+        <div class="container mx-auto px-4 section-padding relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2 mb-6 glass-effect">
+                    <i class="fas fa-file-alt text-yellow-400"></i>
+                    <span class="text-sm font-semibold">Dernière mise à jour : 16 août 2023</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Conditions d'<span class="text-gradient">Utilisation</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Découvrez les règles d'utilisation de Canada-Credit, vos droits et nos engagements en matière de transparence.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#conditions" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        Consulter les Conditions
+                        <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="./contact" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-question-circle mr-2"></i>
+                        Questions ?
+                    </a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Quick Navigation -->
+    <section class="bg-gray-50 py-8 border-b border-gray-200 sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <nav class="flex flex-wrap justify-center gap-2">
+                    <a href="#acceptation" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-check-circle mr-2 text-blue-500"></i>
+                        Acceptation
+                    </a>
+                    <a href="#utilisation" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-laptop mr-2 text-green-500"></i>
+                        Utilisation
+                    </a>
+                    <a href="#propriete" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-copyright mr-2 text-purple-500"></i>
+                        Propriété
+                    </a>
+                    <a href="#responsabilites" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-balance-scale mr-2 text-orange-500"></i>
+                        Responsabilités
+                    </a>
+                    <a href="#juridiction" class="text-gray-600 hover:text-blue-600 font-medium text-sm px-3 py-2 rounded-lg bg-white shadow-sm hover:shadow-md transition-all border border-gray-200">
+                        <i class="fas fa-gavel mr-2 text-red-500"></i>
+                        Juridiction
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
 
+    <!-- Main Content -->
+    <section id="conditions" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <!-- Introduction -->
+                <div class="legal-section fade-in">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 mb-8 border border-blue-100">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Conditions Générales d'Utilisation</h2>
+                        <p class="text-gray-700 text-lg">
+                            Ces conditions générales régissent votre accès et votre utilisation du site Web
+                            <a href="https://www.canada-credit.fr/" class="text-blue-600 hover:text-blue-700 font-semibold">https://www.canada-credit.fr/</a>
+                            et des services associés. En utilisant notre site, vous acceptez d'être lié par ces conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 1 -->
+                <div id="acceptation" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-3 text-2xl"></i>
+                        Acceptation des Conditions Générales
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Les présentes conditions d'utilisation du site Web constituent une entente légale entre vous et Canada-Credit.
+                            En utilisant le site Web ou en cliquant pour accepter les modalités, vous acceptez d'être lié et de vous conformer
+                            à ces modalités et à notre déclaration de confidentialité.
+                        </p>
+                        <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                            <p class="text-blue-800 font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                Si vous n'acceptez pas ces termes et conditions ou la déclaration de confidentialité, vous ne devez pas accéder
+                                ou utiliser le site Web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="utilisation" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-laptop text-green-600 mr-3 text-2xl"></i>
+                        Votre Utilisation du Site Web
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Les utilisateurs sont responsables d'obtenir leur propre accès au site Web et de la disponibilité
+                            et de la performance du site Web. Les utilisateurs sont tenus de s'assurer que toutes les personnes
+                            qui accèdent au site Web connaissent les présentes conditions générales et s'y conforment.
+                        </p>
+
+                        <h4 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Sécurité du Compte</h4>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Tout nom d'utilisateur, mot de passe ou tout autre élément d'information choisi par vous doit être
+                            traité comme confidentiel. Vous comprenez et acceptez que si un compte vous est fourni, votre compte
+                            vous est personnel et vous acceptez de ne fournir à aucune autre personne l'accès à ce site Web.
+                        </p>
+
+                        <h4 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Interdictions</h4>
+                        <div class="bg-red-50 rounded-lg p-6 border border-red-200">
+                            <ul class="legal-list text-gray-700 space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-ban text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Accéder au contenu et aux données qui ne vous sont pas destinés</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-ban text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Tenter de violer les mesures de sécurité non autorisées</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-ban text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Utiliser tout robot, araignée ou autre dispositif automatique</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-ban text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Introduire tout virus, cheval de Troie ou autre matériel malveillant</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-ban text-red-500 mr-3 mt-1 flex-shrink-0"></i>
+                                    <span>Attaquer le site Web via des attaques par déni de service</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="propriete" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-copyright text-purple-600 mr-3 text-2xl"></i>
+                        Droits de Propriété Intellectuelle
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Le site Web et l'ensemble de son contenu, de ses caractéristiques et de ses fonctionnalités,
+                            appartiennent à la Société, à ses concédants de licence ou à d'autres fournisseurs de ce matériel
+                            et sont protégés sous toutes formes par les lois sur la propriété intellectuelle.
+                        </p>
+
+                        <div class="bg-purple-50 rounded-lg p-6 border border-purple-200">
+                            <div class="flex items-start">
+                                <i class="fas fa-trademark text-purple-600 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-purple-900 mb-2">Marques de Commerce</h4>
+                                    <p class="text-purple-800">
+                                        Le nom "Canada-Credit" et le logo associé sont des marques de commerce de la Société.
+                                        Vous ne devez pas utiliser ces marques sans autorisation écrite préalable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="responsabilites" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-balance-scale text-orange-600 mr-3 text-2xl"></i>
+                        Responsabilités et Limitations
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Exclusion des Garanties</h4>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Votre utilisation du site Web, de son contenu et des services se fait à vos propres risques.
+                            Le site Web, son contenu et tous les services sont fournis « tels quels » et « tels que disponibles »,
+                            sans aucune garantie d'aucune sorte.
+                        </p>
+
+                        <h4 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Limitation de Responsabilité</h4>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            En aucun cas, la Société ne sera responsable de dommages de quelque nature que ce soit,
+                            y compris les dommages directs, indirects, spéciaux, accessoires, consécutifs ou punitifs,
+                            découlant de ou en relation avec votre utilisation du site Web.
+                        </p>
+
+                        <h4 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Dédommagement</h4>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Vous acceptez de défendre, d'indemniser et de protéger la Société contre toute réclamation,
+                            responsabilité, dommages ou pertes découlant de votre violation de ces Conditions Générales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div id="juridiction" class="legal-section fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-gavel text-red-600 mr-3 text-2xl"></i>
+                        Droit et Juridiction Applicables
+                    </h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Le site Web et les présentes modalités seront régis et interprétés conformément aux lois
+                            de la province de l'Ontario et aux lois fédérales du Canada qui y sont applicables.
+                        </p>
+
+                        <div class="bg-red-50 rounded-lg p-6 border border-red-200">
+                            <div class="flex items-start">
+                                <i class="fas fa-balance-scale-right text-red-600 text-xl mr-4 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-red-900 mb-2">Compétence Judiciaire</h4>
+                                    <p class="text-red-800">
+                                        Toute action ou procédure découlant de ces conditions sera intentée devant les tribunaux
+                                        de la province de l'Ontario et/ou la Cour fédérale du Canada.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="legal-section fade-in">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center text-white shadow-xl">
+                        <h3 class="text-3xl font-bold mb-6">Des Questions sur nos Conditions ?</h3>
+                        <p class="text-blue-100 mb-8 text-xl max-w-2xl mx-auto leading-relaxed">
+                            Notre équipe est à votre disposition pour répondre à toutes vos questions concernant
+                            nos conditions générales et vous accompagner dans vos démarches.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                            <a href="./contact" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 font-semibold">
+                                <i class="fas fa-envelope mr-3"></i>
+                                Nous Contacter
+                            </a>
+                            <a href="tel:+14509151328" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg font-semibold">
+                                <i class="fas fa-phone mr-3"></i>
+                                +1 (450) 915-1328
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back to Home -->
+                <div class="text-center mt-12 fade-in">
+                    <a href="./home" class="btn-primary text-lg px-8 py-4 inline-flex items-center font-semibold">
+                        <i class="fas fa-home mr-3"></i>
+                        Retour à l'Accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-<footer class=" bg-gray-800">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="flex justify-center text-teal-600 text-teal-300">
-            <h2 class="text-2xl text-neutral-50 font-semibold">canada-credit</h2>
-        </div>
-
-        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed  text-gray-300 font-semibold">
-            FINANCE PRÊT ET RAPIDE
-        </p>
-
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./home">
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./about">
-                    A propos
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./loan-hypo">
-                    Prêts hypothécaires-personnels
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./investment">
-                    Investissements
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./contact">
-                    Faire une demande
-                </a>
-            </li>
-        </ul>
-
-        <div class="mt-10 max-w-6xl  flex flex-col md:flex justify-center gap-6 md:gap-8">
-            <div
-                class="flex justify-center list-none mx-auto max-sm:text-center space-x-5 max-md:flex-col items-center order-first md:order-none">
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
                 <div>
-                    <span class="font-semibold text-green-400">Noms :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 9491-3282 QUÉBEC INC.</span>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                        <span class="text-xl font-bold">Canada<span class="text-blue-400">Credit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm">
+                        Votre partenaire de confiance pour tous vos projets de financement
+                        au Canada. Solutions personnalisées et accompagnement expert.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://m.me/129521570254817?source=qr_link_share" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="tel:+14509151328" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:info@canada-credit.fr" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="">
-                    <span class="font-semibold  text-green-400">Numéro Permis d'autorisation :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 17382-2 21</span>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liens Rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./home" class="text-gray-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                        <li><a href="./about" class="text-gray-400 hover:text-white transition-colors text-sm">À Propos</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêts Hypothécaires</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissements</a></li>
+                        <li><a href="./contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
                 </div>
-                <div class=" ">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                    <span class="font-semibold text-green-400">Adresse service :</span>
-                    <span class="text-neutral-50 text-sm w-full"> RUE DU MAROC Candiac J5R5W9</span>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Nos Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Immobilier</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Personnel</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissement</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Simulation en Ligne</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">RUE DU MAROC Candiac J5R5W9</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (450) 915-1328</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@canada-credit.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">9491-3282 QUÉBEC INC.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-                  <!-- Legal Section -->
-            <div class="my-2 text-center text-gray-300">
-                <p class="text-sm mb-2">
-                    <!--<a href="./legal" class="text-green-400 hover:text-green-500">Mentions légales</a> | -->
-                    <a href="./privacy-policy" class="text-green-400 hover:text-green-500">Politique de confidentialité</a> | 
-                    <!--<a href="./general-terms" class="text-green-400 hover:text-green-500">Conditions générales de prêt</a> | -->
-                    <a href="./acessibility" class="text-green-400 hover:text-green-500">Accessibilité</a> | 
-                    <a href="./terms-of-use" class="text-green-400 hover:text-green-500">Conditions générales d'utilisation</a>
-                </p>
-            </div>
-            
-            <div class="flex max-md:mx-auto space-x-4 justify-center items-center md:flex-row">
-                <div
-                    class="card bg-blue-600 hover:bg-blue-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-white size-8 justify-center h-fit w-fit flex items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-gray-600 hover:bg-gray-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Phone</span>
-                        <i class="fas fa-phone size-8 justify-center h-fit w-fit flex text-white items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-green-600 hover:bg-green-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                        class="text-gray-200 justify-center flex  ">
-                        <span class="sr-only">WhatsApp</span>
-                        <i class="fab fa-whatsapp size-8 justify-center h-fit w-fit flex items-center text-white"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-red-600 hover:bg-red-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="mailto:info@canada-credit.fr" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Email</span>
-                        <i class="fas fa-envelope size-8 justify-center h-fit text-white w-fit flex items-center"></i>
-                    </a>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Canada-Credit. Tous droits réservés.
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <a href="./privacy-policy" class="text-gray-400 hover:text-white transition-colors text-sm">Politique de confidentialité</a>
+                        <a href="./general-terms" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions générales de prêt</a>
+                        <a href="./acessibility" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibilité</a>
+                        <a href="./terms-of-use" class="text-blue-400 font-semibold transition-colors text-sm">Conditions générales d'utilisation</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- copyright -->
-            <div class="my-5 text-center ">
-                <p class="text-sm text-gray-300">© 2025 canada-credit. Tous droits réservés.</p>
-                 <a class='text-sm text-green-400 mt-5 hover:text-yellow-500' href="https://wa.me/2290161151093">Bestdev</a>
-            </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+           class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors animate-bounce"
+           title="Contact WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+        <button id="scrollToTop"
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors"
+                title="Remonter en haut">
+            <i class="fas fa-chevron-up text-lg"></i>
+        </button>
     </div>
-    
-    </div>
-</footer>
-    
-    
-    <button id="scrollToTop" class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-lg p-4 px-5 shadow-xl hover:bg-blue-500 transition-colors duration-300" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top
         const scrollToTopButton = document.getElementById('scrollToTop');
 
         window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'flex';
             } else {
                 scrollToTopButton.style.display = 'none';
             }
@@ -374,7 +627,39 @@
                 behavior: 'smooth'
             });
         });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
