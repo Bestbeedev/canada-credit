@@ -1,18 +1,24 @@
- // Ajoute un écouteur d'événement pour le bouton du menu mobile
- document.getElementById('mobile-menu-button').addEventListener('click', function () {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
+// Menu mobile
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+  }
+  const closeBtn = document.getElementById('close-mobile-menu');
+  if (closeBtn && menu) {
+    closeBtn.addEventListener('click', function () {
+      menu.classList.add('hidden');
+    });
+  }
 });
 
- // Ajoute un écouteur d'événement pour le bouton de fermeture du menu mobile
-document.getElementById('close-mobile-menu').addEventListener('click', function () {
-    document.getElementById('mobile-menu').classList.add('hidden');
-});
-
-// Enregistre le plugin ScrollTrigger de GSAP
-gsap.registerPlugin(ScrollTrigger);
-
-// Animation pour les éléments
-const animations = [
+// Animations: utiliser GSAP si présent sinon fallback IntersectionObserver
+if (window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+  const animations = [
     { element: ".header", y: -100 },
     { element: ".hero-section", y: 100 },
     { element: ".features-section", y: 30 },
@@ -27,27 +33,77 @@ const animations = [
     { element: ".footer", y: 100 },
     { element: ".custom", x: 100 },
     { element: ".cta-section-1", y: 80 },
-];
-
-animations.forEach(({ element, x = 0, y = 0 }) => {
-    if (document.querySelector(element)) { // Vérifie si l'élément existe avant d'appliquer l'animation
-        gsap.from(element, {
-            x,
-            y,
-            opacity: 0,
-            duration: 1,
-            ease: "power4.out",
-            scrollTrigger: {
-                trigger: element,
-                start: "top 90%",
-                end: "+=500",
-                scrub: true
-            }
-        });
-    } else {
-        console.warn(`GSAP target ${element} not found.`); // Avertit si l'élément n'est pas trouvé
+  ];
+  animations.forEach(({ element, x = 0, y = 0 }) => {
+    if (document.querySelector(element)) {
+      gsap.from(element, {
+        x,
+        y,
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 90%",
+          end: "+=500",
+          scrub: true,
+        },
+      });
     }
-});
+  });
+  // Animate generic utility classes as well
+  document.querySelectorAll('.fade-in').forEach((el) => {
+    gsap.from(el, {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+  document.querySelectorAll('.slide-in-left').forEach((el) => {
+    gsap.from(el, {
+      x: -60,
+      opacity: 0,
+      duration: 0.9,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+  document.querySelectorAll('.slide-in-right').forEach((el) => {
+    gsap.from(el, {
+      x: 60,
+      opacity: 0,
+      duration: 0.9,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+} else {
+  document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach((el) => observer.observe(el));
+  });
+}
 
 // Ajoute un écouteur d'événement pour le chargement du DOM
 document.addEventListener("DOMContentLoaded", function () {
@@ -113,6 +169,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ⏳ Démarrer le slider toutes les 6 secondes
   setInterval(changeBackground, 6000);
+});
+
+// Hero background slider (home)
+document.addEventListener("DOMContentLoaded", function () {
+  const heroSliders = document.querySelectorAll('.hero-slider');
+  if (heroSliders.length === 0) return;
+  let currentSlide = 0;
+  function showSlide(n) {
+    heroSliders.forEach((slide) => slide.classList.remove('active'));
+    currentSlide = (n + heroSliders.length) % heroSliders.length;
+    heroSliders[currentSlide].classList.add('active');
+  }
+  setInterval(() => showSlide(currentSlide + 1), 6000);
+});
+
+// Scroll-to-top button
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollToTopButton = document.getElementById('scrollToTop');
+  if (!scrollToTopButton) return;
+  const toggleBtn = () => {
+    if (window.scrollY > 300) {
+      scrollToTopButton.style.display = 'flex';
+    } else {
+      scrollToTopButton.style.display = 'none';
+    }
+  };
+  window.addEventListener('scroll', toggleBtn);
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  toggleBtn();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -188,3 +275,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Exécuter immédiatement
   removeGoogleTranslateUI();
 });
+
+// Expose Google Translate init for the loader script
+window.googleTranslateElementInit = function () {
+  try {
+    var id = 'google_translate_element';
+    if (!document.getElementById(id)) {
+      var div = document.createElement('div');
+      div.id = id;
+      div.style.display = 'none';
+      document.body.appendChild(div);
+    }
+    new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, id);
+  } catch (e) {
+    // Ignore if google is not ready yet
+  }
+};

@@ -10,6 +10,8 @@
     <meta name="keywords" content="prêt hypothécaire, prêt personnel, financement Canada, crédit immobilier, investissement, simulation prêt" />
     <title>Canada-Credit - Prêts Hypothécaires & Personnels Rapides</title>
     <link rel="canonical" href="https://canada-credit.fr/home" />
+    <script src="script/main.js" defer></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -41,6 +43,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
 
@@ -172,19 +175,6 @@
             gap: 8px;
             align-items: start;
         }
-        /* Hero background slider */
-        .hero-slider {
-            position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .hero-slider.active {
-            opacity: 1;
-        }
     </style>
 </head>
 
@@ -199,22 +189,22 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-center space-x-6">
                 <a href="https://m.me/129521570254817?source=qr_link_share"
-                   class="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+                   class="flex items-center text-blue-600 transition-colors"
                    title="Contactez-nous sur Facebook">
                     <i class="fab fa-facebook text-lg"></i>
                 </a>
                 <a href="tel:+1(450) 915-1328"
-                   class="flex items-center text-gray-600 hover:text-green-600 transition-colors"
+                   class="flex items-center text-green-600 transition-colors"
                    title="Appelez-nous">
                     <i class="fas fa-phone text-lg"></i>
                 </a>
                 <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
-                   class="flex items-center text-gray-600 hover:text-green-500 transition-colors"
+                   class="flex items-center text-green-500 transition-colors"
                    title="Contact WhatsApp">
                     <i class="fab fa-whatsapp text-lg"></i>
                 </a>
                 <a href="mailto:info@canada-credit.fr"
-                   class="flex items-center text-gray-600 hover:text-red-600 transition-colors"
+                   class="flex items-center text-red-600 transition-colors"
                    title="Envoyez-nous un email">
                     <i class="fas fa-envelope text-lg"></i>
                 </a>
@@ -227,21 +217,21 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
+                <a href="./home" class="flex items-center space-x-3">
                     <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
                     <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
-                </div>
+                </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./home" class="text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
                     <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
                     <a href="./investment" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
                     <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
                     <a href="./contact" class="btn-primary rounded-full text-sm xl:text-base">Faire une Demande</a>
 
                     <!-- Language Selector -->
-                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <select id="language-select" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="fr">🇫🇷 FR</option>
                         <option value="en">🇬🇧 EN</option>
                         <option value="es">🇪🇸 ES</option>
@@ -259,14 +249,14 @@
         <!-- Mobile Menu -->
         <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
             <div class="container mx-auto px-4 py-6 space-y-4">
-                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./home" class="block py-3 text-blue-600 font-semibold border-b border-gray-100">Accueil</a>
                 <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
                 <a href="./investment" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Investissements</a>
                 <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
                 <a href="./contact" class="block py-4 text-center btn-primary w-full">Faire une Demande</a>
 
                 <!-- Mobile Language Selector -->
-                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select id="language-select-1" class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="fr">🇫🇷 Français</option>
                     <option value="en">🇬🇧 English</option>
                     <option value="es">🇪🇸 Español</option>
@@ -387,7 +377,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <div class="stats-counter mb-3 group-hover:scale-110 transition-transform duration-500">5,000</div>
+                        <div class="stats-counter mb-3 group-hover:scale-110 transition-transform duration-500">5000€</div>
                         <p class="text-gray-700 font-semibold text-sm md:text-base mb-2">Capital Prêté</p>
                         <p class="text-gray-500 text-xs md:text-sm">Montant total financé</p>
                     </div>
@@ -1444,67 +1434,6 @@ if (window.innerWidth >= 768) {
     </div>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Scroll to Top
-        const scrollToTopButton = document.getElementById('scrollToTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollToTopButton.style.display = 'flex';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        });
-
-        scrollToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Hero Slider
-        const heroSliders = document.querySelectorAll('.hero-slider');
-        let currentSlide = 0;
-
-        function showSlide(n) {
-            heroSliders.forEach(slide => slide.classList.remove('active'));
-            currentSlide = (n + heroSliders.length) % heroSliders.length;
-            heroSliders[currentSlide].classList.add('active');
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        // Change slide every 5 seconds
-        setInterval(nextSlide, 6000);
-
-        // Scroll Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animated elements
-        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
-            observer.observe(el);
-        });
 
         // Stats Counter Animation
         const counters = document.querySelectorAll('.stats-counter');
@@ -1540,5 +1469,6 @@ if (window.innerWidth >= 768) {
             counterObserver.observe(counter);
         });
     </script>
+
 </body>
 </html>

@@ -5,291 +5,432 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Merci de nous avoir contactés ! Nous avons bien reçu votre message et reviendrons vers vous sous peu. Canada-Credit vous accompagne dans vos projets." />
-  <meta name="author" content="Canada-Credit" />
-  <title>Merci pour votre message | Canada-Credit</title>
-  <link rel="canonical" href="https://canada-credit.fr/thanks" />
+    <meta name="author" content="Canada-Credit" />
+    <title>Merci pour votre message | Canada-Credit</title>
+    <link rel="canonical" href="https://canada-credit.fr/thanks" />
 
-   
-      <!-- Google Tag Manager -->
-   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
-    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+        'gtm.start': new Date().getTime(),event:'gtm.js'
+        });var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQSCGS83');</script>
+
     <!-- Meta for Socials Medias -->
     <meta property="og:title" content="Merci pour votre message | Canada-Credit" />
-   <meta property="og:description" content="Nous avons bien reçu votre message et reviendrons vers vous sous peu. Merci de faire confiance à Canada-Credit !" />
-   <meta property="og:url" content="https://www.canada-credit.com/thanks" />
-   <meta property="og:type" content="website" />
-   <meta property="og:image" content="https://www.canada-credit.com/images/merci.jpg" />
+    <meta property="og:description" content="Nous avons bien reçu votre message et reviendrons vers vous sous peu. Merci de faire confiance à Canada-Credit !" />
+    <meta property="og:url" content="https://www.canada-credit.com/thanks" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.canada-credit.com/images/merci.jpg" />
 
-    
-    
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,300,400,500,700,900" rel="stylesheet" />
-    <script src="/script/main.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css" />
-    
-    <!-- Script Google Translate -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script/main.js" defer></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'fr', autoDisplay: false },
-                'google_translate_element'
-            );
+    <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --accent: #06d6a0;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-    </script>
-    
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sora', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #334155;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .success-animation {
+            animation: success-pulse 2s ease-in-out;
+        }
+
+        @keyframes success-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
-    
-     <!-- Google Tag Manager (noscript) -->
+<body class="bg-white">
+
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQSCGS83"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <!-- Header -->
-   <header class="sticky bg-neutral-50 shadow-lg inset-x-0 top-0 z-50">
-        <nav class="flex items-center items-center justify-between py-3 px-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="./home" class="-m-1.5 p-1.5">
-                    <span class="sr-only">canada-credit</span>
-                    <h1 class="text-2xl text-indigo-600 max-sm:text-lg  font-semibold">canada-credit</h1>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="./home" class="flex items-center space-x-3">
+                    <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
                 </a>
-            </div>
-            <div class="flex space-x-3 lg:hidden">
-                <div class="mx-4">
-                    <select id="language-select-1"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+                    <a href="./home" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Accueil</a>
+                    <a href="./loan-hypo" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Prêts Hypothécaires</a>
+                    <a href="./investment" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">Investissements</a>
+                    <a href="./about" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors text-sm xl:text-base">À Propos</a>
+                    <a href="./contact" class="btn-primary text-sm xl:text-base">Faire une Demande</a>
+
+                    <!-- Language Selector -->
+                    <select id="language-select" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="nl">🇳🇱 NL</option>
                     </select>
-                </div>
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center cursor-pointer  text-neutral-600 justify-center rounded-md p-2.5 text-gray-700"
-                    id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars text-neutral-600"></i>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-700 text-lg"></i>
                 </button>
             </div>
-            <div class="hidden lg:flex items-center  lg:gap-x-12">
-                <a href="./home" class="text-sm/6 font-semibold  nav-link text-gray-900">Accueil</a>
-                <a href="./loan-hypo" class="text-sm/6 nav-link font-semibold text-gray-900">Prêts
-                    hypothécaires-personnels</a>
-                <a href="./investment" class="text-sm/6 nav-link font-semibold text-gray-900">Investissements</a>
-                <a href="./about" class="text-sm/6  nav-link font-semibold text-gray-900">À propos</a>
-                <a href="./contact" class="text-sm/6 nav-link font-semibold text-gray-900">Faire une demande</a>
-                <div class="mx-4">
-                    <select id="language-select"
-                        class="border border-neutral-300 bg-neutral-100 rounded-md p-2 text-gray-700">
-                        <option value="fr">🇫🇷 Français</option>
-                        <option value="en">🇬🇧 English</option>
-                        <option value="es">🇪🇸 Espagnol</option>
-                        <option value="nl">🇳🇱 Nederlands</option>
-                    </select>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-6 space-y-4">
+                <a href="./home" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Accueil</a>
+                <a href="./loan-hypo" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Prêts Hypothécaires</a>
+                <a href="./investment" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">Investissements</a>
+                <a href="./about" class="block py-3 text-gray-700 font-semibold border-b border-gray-100">À Propos</a>
+                <a href="./contact" class="block py-4 text-center btn-primary w-full">Faire une Demande</a>
+
+                <!-- Mobile Language Selector -->
+                <select id="language-select-1" class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-600/20 to-transparent"></div>
+
+        <div class="container mx-auto px-4 section-padding relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-2 mb-6 glass-effect">
+                    <i class="fas fa-check-circle text-green-400"></i>
+                    <span class="text-sm font-semibold">Message envoyé avec succès</span>
+                </div>
+
+                <div class="success-animation mb-8">
+                    <i class="fas fa-check-circle text-green-400 text-8xl"></i>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Merci pour votre <span class="text-gradient">message</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Nous avons bien reçu votre demande et reviendrons vers vous dans les plus brefs délais.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="./home" class="btn-primary bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+                        <i class="fas fa-home mr-3"></i>
+                        Retour à l'accueil
+                    </a>
+                    <a href="./contact" class="px-8 py-4 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition-all text-lg">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Nouveau message
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden  hidden" role="dialog" aria-modal="true" id="mobile-menu">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="./home" class="-m-1.5 p-1.5">
-                        <span class="sr-only">canada-credit</span>
-                        <h1 class="text-xl text-indigo-600 font-semibold">canada-credit</h1>
+        </div>
+    </section>
 
-                    </a>
-                    <button type="button"
-                        class="-m-2.5 bg-neutral-200 cursor-pointer  border-neutral-400  rounded-md p-2 px-4 text-gray-700 text-neutral-600"
-                        id="close-mobile-menu">
-                        <span class="sr-only">Close menu</span>
-                        <i class="fas fa-times text-neutral-600"></i>
-                    </button>
+    <!-- Next Steps Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Que se passe-t-il maintenant ?</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Voici les prochaines étapes de votre parcours avec Canada-Credit
+                    </p>
                 </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6"></div>
-                        <a href="./home"
-                            class="-mx-3 block  nav-link-mobile  rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Accueil</a>
-                        <a href="./about"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">À
-                            propos</a>
-                        <a href="/loan-hypo"
-                            class="-mx-3 block  nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prêts
-                            hypothécaires-personnels</a>
-                        <a href="./investment"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Investissements</a>
-                        <a href="/contact"
-                            class="-mx-3 block nav-link-mobile rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Faire
-                            une demande</a>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover fade-in">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <span class="text-blue-600 font-bold text-xl">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Analyse de votre demande</h3>
+                        <p class="text-gray-600 mb-6">
+                            Notre équipe examine attentivement votre demande pour comprendre vos besoins spécifiques.
+                        </p>
+                        <div class="flex items-center text-blue-600 font-semibold">
+                            <span>Délai: 24-48h</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover fade-in">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                            <span class="text-green-600 font-bold text-xl">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Contact personnalisé</h3>
+                        <p class="text-gray-600 mb-6">
+                            Un conseiller spécialisé vous contactera pour discuter des options adaptées à votre situation.
+                        </p>
+                        <div class="flex items-center text-green-600 font-semibold">
+                            <span>Contact téléphonique ou email</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 card-hover fade-in">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <span class="text-purple-600 font-bold text-xl">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Proposition sur mesure</h3>
+                        <p class="text-gray-600 mb-6">
+                            Nous élaborons une solution financière personnalisée répondant à vos objectifs.
+                        </p>
+                        <div class="flex items-center text-purple-600 font-semibold">
+                            <span>Offre adaptée à vos besoins</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    
-     <main class="flex items-center justify-center max-sm:px-6 min-h-screen bg-white">
-        <div class="text-center bg-neutral-100  p-10 rounded-xl">
-            <h2 class="text-3xl font-semibold tracking-tight text-gray-900">Merci de nous avoir contactés!</h2>
-            <p class="mt-4 text-lg text-gray-700">Votre message a été envoyé avec succès. Nous vous répondrons dès que possible.</p>
-            <a href="./home" class="mt-6 inline-block rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500">Retour à l'accueil</a>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-12 text-center fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Besoin d'une réponse rapide ?</h2>
+                    <p class="text-gray-700 mb-8 text-lg max-w-2xl mx-auto">
+                        Si votre demande est urgente, n'hésitez pas à nous contacter directement par téléphone ou WhatsApp.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                        <a href="tel:+14509151328"
+                           class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all flex flex-col items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-phone text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Appelez-nous</h3>
+                            <p class="text-gray-600 mb-4">+1 (450) 915-1328</p>
+                            <span class="text-blue-600 font-semibold text-sm">Cliquez pour appeler</span>
+                        </a>
+
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+                           class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all flex flex-col items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
+                            <p class="text-gray-600 mb-4">Message direct</p>
+                            <span class="text-blue-600 font-semibold text-sm">Cliquez pour discuter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-
-   <!-- Footer -->
-<footer class=" bg-gray-800">
-    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="flex justify-center text-teal-600 text-teal-300">
-            <h2 class="text-2xl text-neutral-50 font-semibold">canada-credit</h2>
-        </div>
-
-        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed  text-gray-300 font-semibold">
-            FINANCE PRÊT ET RAPIDE
-        </p>
-
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./home">
-                    Accueil
-                </a>
-            </li>
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./about">
-                    A propos
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./loan-hypo">
-                    Prêts hypothécaires-personnels
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./investment">
-                    Investissements
-                </a>
-            </li>
-
-            <li>
-                <a class="text-gray-700 transition hover:text-gray-700/75 text-white hover:text-white/75"
-                    href="./contact">
-                    Faire une demande
-                </a>
-            </li>
-        </ul>
-
-        <div class="mt-10 max-w-6xl  flex flex-col md:flex justify-center gap-6 md:gap-8">
-            <div
-                class="flex justify-center list-none mx-auto max-sm:text-center space-x-5 max-md:flex-col items-center order-first md:order-none">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
                 <div>
-                    <span class="font-semibold text-green-400">Noms :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 9491-3282 QUÉBEC INC.</span>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
+                        <span class="text-xl font-bold">Canada<span class="text-blue-400">Credit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm">
+                        Votre partenaire de confiance pour tous vos projets de financement
+                        au Canada. Solutions personnalisées et accompagnement expert.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://m.me/129521570254817?source=qr_link_share" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/message/YPLFYRWPYDEJJ1" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                        <a href="tel:+14509151328" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="mailto:info@canada-credit.fr" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="">
-                    <span class="font-semibold  text-green-400">Numéro Permis d'autorisation :</span>
-                    <span class="text-neutral-50 w-full text-sm"> 17382-2 21</span>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liens Rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./home" class="text-gray-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                        <li><a href="./about" class="text-gray-400 hover:text-white transition-colors text-sm">À Propos</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêts Hypothécaires</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissements</a></li>
+                        <li><a href="./contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
                 </div>
-                <div class=" ">
-                    <i class="fas fa-map-marker-alt text-white"></i>
-                    <span class="font-semibold text-green-400">Adresse service :</span>
-                    <span class="text-neutral-50 text-sm w-full"> RUE DU MAROC Candiac J5R5W9</span>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Nos Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Immobilier</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Prêt Personnel</a></li>
+                        <li><a href="./investment" class="text-gray-400 hover:text-white transition-colors text-sm">Investissement</a></li>
+                        <li><a href="./loan-hypo" class="text-gray-400 hover:text-white transition-colors text-sm">Simulation en Ligne</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">RUE DU MAROC Candiac J5R5W9</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (450) 915-1328</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@canada-credit.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-building text-blue-400 mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">9491-3282 QUÉBEC INC.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-                  <!-- Legal Section -->
-            <div class="my-2 text-center text-gray-300">
-                <p class="text-sm mb-2">
-                    <!--<a href="./legal" class="text-green-400 hover:text-green-500">Mentions légales</a> | -->
-                    <a href="./privacy-policy" class="text-green-400 hover:text-green-500">Politique de confidentialité</a> | 
-                    <!--<a href="./general-terms" class="text-green-400 hover:text-green-500">Conditions générales de prêt</a> | -->
-                    <a href="./acessibility" class="text-green-400 hover:text-green-500">Accessibilité</a> | 
-                    <a href="./terms-of-use" class="text-green-400 hover:text-green-500">Conditions générales d'utilisation</a>
-                </p>
-            </div>
-            
-            <div class="flex max-md:mx-auto space-x-4 justify-center items-center md:flex-row">
-                <div
-                    class="card bg-blue-600 hover:bg-blue-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://m.me/129521570254817?source=qr_link_share" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-white size-8 justify-center h-fit w-fit flex items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-gray-600 hover:bg-gray-500 w-fit flex justify-center items-center h-fit transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="tel:+1(450) 915-1328" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Phone</span>
-                        <i class="fas fa-phone size-8 justify-center h-fit w-fit flex text-white items-center"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-green-600 hover:bg-green-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="https://wa.me/message/YPLFYRWPYDEJJ1" rel="noreferrer" target="_blank"
-                        class="text-gray-200 justify-center flex  ">
-                        <span class="sr-only">WhatsApp</span>
-                        <i class="fab fa-whatsapp size-8 justify-center h-fit w-fit flex items-center text-white"></i>
-                    </a>
-                </div>
-                <div
-                    class="card bg-red-600 hover:bg-red-500 transition-colors duration-300 p-4 rounded-lg cursor-pointer">
-                    <a href="mailto:info@canada-credit.fr" rel="noreferrer" target="_blank"
-                        class="text-gray-700 justify-center flex  ">
-                        <span class="sr-only">Email</span>
-                        <i class="fas fa-envelope size-8 justify-center h-fit text-white w-fit flex items-center"></i>
-                    </a>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Canada-Credit. Tous droits réservés.
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <a href="./privacy-policy" class="text-gray-400 font-semibold transition-colors text-sm">Politique de confidentialité</a>
+                        <a href="./general-terms" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions générales de prêt</a>
+                        <a href="./acessibility" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibilité</a>
+                        <a href="./terms-of-use" class="text-gray-400 hover:text-white transition-colors text-sm">Conditions d'utilisation</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- copyright -->
-            <div class="my-5 text-center ">
-                <p class="text-sm text-gray-300">© 2025 canada-credit. Tous droits réservés.</p>
-                 <a class='text-sm text-green-400 mt-5 hover:text-yellow-500' href="https://wa.me/2290161151093">Bestdev</a>
-            </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="https://wa.me/message/YPLFYRWPYDEJJ1"
+           class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors animate-bounce"
+           title="Contact WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+        <button id="scrollToTop"
+                class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors"
+                title="Remonter en haut">
+            <i class="fas fa-chevron-up text-lg"></i>
+        </button>
     </div>
-    
-    </div>
-</footer>
 
 
-    <button id="scrollToTop" class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-lg p-4 px-5 shadow-xl hover:bg-blue-500 transition-colors duration-300" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script>
-        const scrollToTopButton = document.getElementById('scrollToTop');
-
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = 'block';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        });
-
-        scrollToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
-
 </html>

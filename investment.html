@@ -29,7 +29,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script/main.js" defer></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel="icon" href="./assets/canada-credit-icone.svg" type="image/svg+xml" />
 
     <style>
@@ -129,10 +132,10 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
+                <a href="./home" class="flex items-center space-x-3">
                     <img src="./assets/canada-credit-icone.svg" alt="Canada Credit" class="w-10 h-10">
                     <span class="text-xl md:text-2xl font-bold text-gray-900">Canada<span class="text-blue-600">Credit</span></span>
-                </div>
+                </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -143,7 +146,7 @@
                     <a href="./contact" class="btn-primary rounded-full text-sm xl:text-base">Faire une Demande</a>
 
                     <!-- Language Selector -->
-                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <select id="language-select" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="fr">🇫🇷 FR</option>
                         <option value="en">🇬🇧 EN</option>
                         <option value="es">🇪🇸 ES</option>
@@ -168,7 +171,7 @@
                 <a href="./contact" class="block py-4 text-center  btn-primary w-full">Faire une Demande</a>
 
                 <!-- Mobile Language Selector -->
-                <select class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select id="language-select-1" class="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm mt-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="fr">🇫🇷 Français</option>
                     <option value="en">🇬🇧 English</option>
                     <option value="es">🇪🇸 Español</option>
